@@ -2062,12 +2062,10 @@
                             </select>
                           </div>
                         </div><br>
-                        <div
-                          class="flex items-center grow rounded-xl border border-dashed gap-4 py-4 border-warning bg-warning-light ">
+                        <div class="flex items-center grow rounded-xl border border-dashed gap-4 p-4 border-warning bg-warning-light py-5">
                           <i class="ki-outline ki-question-2 text-3xl text-warning"></i>
                           <div class="flex flex-col gap-0.5">
-                            <p class="text text-2sm font-normal"> To initialize the tabs with JavaScript, use attribute
-                              instead. This prevents automatic initialization on page load. </p>
+                            <p class="text text-2sm font-normal"> Be cautious when using this feature, as it may affect application performance, especially in high-traffic environments. </p>
                           </div>
                         </div>
 
@@ -2306,7 +2304,7 @@ console.log(greet("World"));
                     <div class="grid lg:grid-cols-3 gap-5 py-5">
                       <div class="lg:col-span-1 gap-5">
                         <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
-                          <label class="form-label flex items-center gap-1 max-w-56">
+                          <label class="form-label flex items-center gap-1 ">
                             Send system-generated emails to super admins<i class="ki-duotone ki-question-2"></i>
                           </label>
                         </div>
@@ -2322,7 +2320,7 @@ console.log(greet("World"));
                     <div class="grid lg:grid-cols-3 gap-5 py-5">
                       <div class="lg:col-span-1 gap-5">
                         <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
-                          <label class="form-label flex items-center gap-1 max-w-56">
+                          <label class="form-label flex items-center gap-1 ">
                             Insert Gmail Feedback-ID header<i class="ki-duotone ki-question-2"></i> </label>
                         </div>
                       </div>
@@ -2337,7 +2335,7 @@ console.log(greet("World"));
                     <div class="grid lg:grid-cols-3 gap-5 py-5">
                       <div class="lg:col-span-1 gap-5">
                         <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
-                          <label class="form-label flex items-center gap-1 max-w-56">
+                          <label class="form-label flex items-center gap-1 ">
                             Enable unsubscribe form<i class="ki-duotone ki-question-2"></i> </label>
                         </div>
                       </div>
@@ -2352,7 +2350,7 @@ console.log(greet("World"));
                     <div class="grid lg:grid-cols-3 gap-5 py-3">
                       <div class="lg:col-span-1 gap-5">
                         <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
-                          <label class="form-label flex items-center gap-1 max-w-56">
+                          <label class="form-label flex items-center gap-1 ">
                             Embed Message ID in tracking links <i class="ki-duotone ki-question-2"></i> </label>
                         </div>
                       </div>
@@ -2367,7 +2365,7 @@ console.log(greet("World"));
                     <div class="grid lg:grid-cols-3 gap-5 py-3">
                       <div class="lg:col-span-1 gap-5">
                         <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
-                          <label class="form-label flex items-center gap-1 max-w-56">
+                          <label class="form-label flex items-center gap-1 ">
                             Embed UTC timestamp in tracking links<i class="ki-duotone ki-question-2"></i> </label>
                         </div>
                       </div>
@@ -2382,7 +2380,7 @@ console.log(greet("World"));
                     <div class="grid lg:grid-cols-3 gap-5 py-3">
                       <div class="lg:col-span-1 gap-5">
                         <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
-                          <label class="form-label flex items-center gap-1 max-w-56">
+                          <label class="form-label flex items-center gap-1 ">
                             Embed sender email in the tracking links<i class="ki-duotone ki-question-2"></i> </label>
                         </div>
                       </div>
@@ -2397,7 +2395,7 @@ console.log(greet("World"));
                     <div class="grid lg:grid-cols-3 gap-5 py-3">
                       <div class="lg:col-span-1 gap-5">
                         <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
-                          <label class="form-label flex items-center gap-1 max-w-56">
+                          <label class="form-label flex items-center gap-1 ">
                             Embed subject in the tracking links<i class="ki-duotone ki-question-2"></i> </label>
                         </div>
                       </div>
@@ -2412,7 +2410,7 @@ console.log(greet("World"));
                     <div class="grid lg:grid-cols-3 gap-5 py-3">
                       <div class="lg:col-span-1 gap-5">
                         <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
-                          <label class="form-label flex items-center gap-1 max-w-56">
+                          <label class="form-label flex items-center gap-1 ">
                             Embed recipient email in the tracking links <i class="ki-duotone ki-question-2"></i>
                           </label>
                         </div>
@@ -2429,45 +2427,495 @@ console.log(greet("World"));
                   <!-- end second tab -->
 
                   <!-- start Third tab -->
-                  <!-- Email Header -->
+                  
                   <div class="hidden" id="tab_2_3">
-                  <div class="bg-blue-500 text-white p-4">
-                    <div class="container mx-auto flex justify-between items-center">
-                      <!-- Logo -->
-                      <div class="text-lg font-bold">
-                        Your Logo
-                      </div>
-                      <!-- Navigation Links -->
-                      <div class="space-x-4">
-                        <a href="#" class="text-white hover:underline">Home</a>
-                        <a href="#" class="text-white hover:underline">About</a>
-                        <a href="#" class="text-white hover:underline">Contact</a>
-                      </div>
+                    <div class="text-xl py-3">
+                      Sending Domain Settings
+                    </div>
+                    <div class="border-b border-b-gray-200"></div>
+                
+                <div class="grid lg:grid-cols-2 gap-5 py-3">
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                      <label class="form-label flex items-center gap-1 max-w-56">
+                        Default selector for DKIM<i class="ki-duotone ki-question-2"></i> </label>
+                      <input class="input" type="url" id="url" name="url" value=""
+                        placeholder="key">
                     </div>
                   </div>
-
-                  <!-- Email Content -->
-                  <div class="container mx-auto p-6 bg-gray-100">
-                    <p class="text-gray-700">
-                      Welcome to our service! Here’s some introductory text or content to get you started.
-                    </p>
-                  </div>
-
-                  <!-- Email Footer -->
-                  <div class="bg-gray-800 text-gray-300 p-4">
-                    <div class="container mx-auto text-center">
-                      <!-- Footer Links -->
-                      <div class="space-x-4 mb-2">
-                        <a href="#" class="text-gray-400 hover:text-white hover:underline">Privacy Policy</a>
-                        <a href="#" class="text-gray-400 hover:text-white hover:underline">Terms of Service</a>
-                      </div>
-                      <!-- Copyright -->
-                      <div class="text-sm">
-                        © 2024 Your Company. All rights reserved.
-                      </div>
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                      <label class="form-label flex items-center gap-1 ">
+                      Default prefix for tracking domain <i class="ki-duotone ki-question-2"></i></label>
+                      <input class="input" type="name" id="name" name="name" value=""
+                        placeholder="Click">
                     </div>
                   </div>
                 </div>
+
+                <div class="grid lg:grid-cols-2 gap-5 py-2">
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                      <label class="form-label flex items-center gap-1 max-w-56">
+                        Domain key size in bits<i class="ki-duotone ki-question-2"></i> </label>
+                      
+                    </div>
+                  </div>
+                  <div class="lg:col-span-1 gap-5 flex gap-12">
+                      <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                       <input class="radio" name="radio2" type="radio" value="1"/>
+                      512
+                      </label>
+                      <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                       <input checked="" class="radio" name="radio2" type="radio" value="1"/>
+                      1024
+                      </label>
+                      <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                        <input checked="" class="radio" name="radio2" type="radio" value="1"/>
+                        2048
+                       </label>
+                  </div>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-5 py-2">
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                      <label class="form-label flex items-center gap-1 ">
+                        DNS lookup method used to fetch the current values <i class="ki-duotone ki-question-2"></i> </label>
+                      
+                    </div>
+                  </div>
+                  <div class="lg:col-span-1 gap-5 flex gap-12">
+                      <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                       <input class="radio" name="radio2" type="radio" value="1"/>
+                     Dig
+                      </label>
+                      <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                       <input checked="" class="radio" name="radio2" type="radio" value="1"/>
+                       Google Toolbox
+                      </label>
+                      <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                        <input checked="" class="radio" name="radio2" type="radio" value="1"/>
+                        Mumara API Method 1
+                       </label>
+                  </div>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-5 py-3">
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                      <label class="form-label flex items-center gap-1 ">
+                        DNS lookup method used to confirm and recheck the records<i class="ki-duotone ki-question-2"></i> </label>
+                      
+                    </div>
+                  </div>
+                  <div class="lg:col-span-1 gap-5 flex gap-12">
+                      <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                       <input class="radio" name="radio2" type="radio" value="1"/>
+                      Dig
+                      </label>
+                      <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                       <input checked="" class="radio" name="radio2" type="radio" value="1"/>
+                       Google Toolbox
+                      </label>
+                      <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                        <input checked="" class="radio" name="radio2" type="radio" value="1"/>
+                        Mumara API Method 1
+                       </label>
+                  </div>
+                </div>
+                <div class="flex items-center grow rounded-xl border border-dashed gap-4 p-4 border-primary bg-primary-light">
+                  <i class="ki-outline ki-information-1 text-3xl text-primary"></i>
+                  <div class="flex flex-col gap-0.5">
+                    <p class="text text-2sm font-normal">dig : needs to be installed on your server in order to make it work. </p>
+                  </div>
+                </div>
+                
+                <div class="grid lg:grid-cols-2 gap-5 py-3">
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                      <label class="form-label flex items-center gap-1 ">
+                        Disable DNS recheck button for (minutes)<i class="ki-duotone ki-question-2"></i> </label>
+                      <input class="input" type="url" id="url" name="url" value=""
+                        placeholder="5">
+                    </div>
+                  </div>
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                      <label class="form-label flex items-center gap-1 ">
+                        PHP file name for tracking domain cloaking method<i class="ki-duotone ki-question-2"></i></label>
+                      <input class="input" type="name" id="name" name="name" value=""
+                        placeholder="index.php">
+                    </div>
+                  </div>
+                </div>
+                <div class="grid lg:grid-cols-2 gap-5 py-3">
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                      <label class="form-label flex items-center gap-1 ">
+                        Fallback domain<i class="ki-duotone ki-question-2"></i> </label>
+                      <input class="input" type="url" id="url" name="url" value=""
+                        placeholder="">
+                    </div>
+                  </div>
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                      <label class="form-label flex items-center gap-1 ">
+                        Fallback domain<i class="ki-duotone ki-question-2"></i></label>
+                      <input class="input" type="name" id="name" name="name" value=""
+                        placeholder="index.php">
+                    </div>
+                  </div>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-5 py-3">
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                      <label class="form-label flex items-center gap-1 ">
+                        Allow users to add duplicate sending domains <i class="ki-duotone ki-question-2"></i> </label>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+
+                      <label class="switch">
+                        <input name="check" type="checkbox" value="1" />
+                    </div>
+                  </div>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-5 py-3">
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                      <label class="form-label flex items-center gap-1 ">
+                        Require domain ownership verification<i class="ki-duotone ki-question-2"></i> </label>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+
+                      <label class="switch">
+                        <input name="check" type="checkbox" value="1" />
+                    </div>
+                  </div>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-5 py-3">
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                      <label class="form-label flex items-center gap-1 ">
+                        Enable fallback Return-Path<i class="ki-duotone ki-question-2"></i> </label>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+
+                      <label class="switch">
+                        <input name="check" type="checkbox" value="1" />
+                    </div>
+                  </div>
+                </div>
+               
+                <div class="flex items-center grow rounded-xl border border-dashed gap-4 p-4 border-2 bg-gray-300 ">
+                  <div class="flex flex-col gap-0.5">
+                    <div class="grid lg:grid-cols-1 gap-5 py-3">
+                      <div class="lg:col-span-1 gap-5">
+                        <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5 ">
+                          <label class="form-label flex items-center gap-1 max-w-56 ">
+                            Set existing sending domains<i class="ki-duotone ki-question-2"></i> </label>
+                          
+                        </div>
+                      </div>
+                      
+                          <label class="form-label flex items-center gap-2.5 text-wrap ">
+                           <input class="radio" name="radio2" type="radio" value="1"/>
+                           <b>Requires Verification: </b>Set existing sending domains as unverified.
+                          </label>
+                          <div class="flex items-center grow rounded-xl border border-dashed gap-4 p-4 border-danger bg-danger-light">
+                            <i class="ki-outline ki-cross-circle text-3xl text-danger"></i>
+                            <div class="flex flex-col gap-0.5">
+                              <p class="text text-2sm font-normal"> To initialize the tabs with JavaScript, use attribute instead. This prevents automatic initialization on page load. </p>
+                            </div>
+                          </div>
+                          <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                           <input checked="" class="radio" name="radio2" type="radio" value="1"/>
+                           <b>Doesn't Require Verification: </b>Set existing sending domains as verified.
+                          </label>
+                          <label class="form-label flex items-center gap-2.5 text-nowrap">
+                            <input checked="" class="radio" name="radio2" type="radio" value="1"/>
+                            <b>Do Nothing: </b>Keep the existing sending domains verification statuses as they are.
+                           </label>
+                      </div>
+                    </div>
+                  </div>
+                
+                <div class="grid lg:grid-cols-3 gap-5 py-3">
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                      <label class="form-label flex items-center gap-1 ">
+                        Use smart selection for tracking domain<i class="ki-duotone ki-question-2"></i> </label>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+
+                      <label class="switch">
+                        <input name="check" type="checkbox" value="1" />
+                    </div>
+                  </div>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-5 py-3">
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                      <label class="form-label flex items-center gap-1 ">
+                        Disable sending from unauthenticated domains <i class="ki-duotone ki-question-2"></i> </label>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+
+                      <label class="switch">
+                        <input name="check" type="checkbox" value="1" />
+                    </div>
+                  </div>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-5 py-3">
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                      <label class="form-label flex items-center gap-1 ">
+                        Default DKIM selector editing for sending domains<i class="ki-duotone ki-question-2"></i> </label>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+
+                      <label class="switch">
+                        <input name="check" type="checkbox" value="1" />
+                    </div>
+                  </div>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-5 py-3">
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                      <label class="form-label flex items-center gap-1 ">
+                        Disable default prefix editing for tracking domains <i class="ki-duotone ki-question-2"></i> </label>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+
+                      <label class="switch">
+                        <input name="check" type="checkbox" value="1" />
+                    </div>
+                  </div>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-5 py-3">
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                      <label class="form-label flex items-center gap-1 ">
+                        Disable default prefix editing for custom bounce domain<i class="ki-duotone ki-question-2"></i> </label>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+
+                      <label class="switch">
+                        <input name="check" type="checkbox" value="1" />
+                    </div>
+                  </div>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-5 py-3">
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                      <label class="form-label flex items-center gap-1 ">
+                        Disable downloading the DKIM Keys <i class="ki-duotone ki-question-2"></i> </label>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+
+                      <label class="switch">
+                        <input name="check" type="checkbox" value="1" />
+                    </div>
+                  </div>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-5 py-3">
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                      <label class="form-label flex items-center gap-1 ">
+                        Disable regenerating the DKIM Keys <i class="ki-duotone ki-question-2"></i> </label>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+
+                      <label class="switch">
+                        <input name="check" type="checkbox" value="1" />
+                    </div>
+                  </div>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-5 py-3">
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                      <label class="form-label flex items-center gap-1 ">
+                        Disable CNAME option for the tracking domain<i class="ki-duotone ki-question-2"></i> </label>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+
+                      <label class="switch">
+                        <input name="check" type="checkbox" value="1" />
+                    </div>
+                  </div>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-5 py-3">
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                      <label class="form-label flex items-center gap-1 ">
+                        Disable .htacess option for the tracking domain <i class="ki-duotone ki-question-2"></i> </label>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+
+                      <label class="switch">
+                        <input name="check" type="checkbox" value="1" />
+                    </div>
+                  </div>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-5 py-3">
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                      <label class="form-label flex items-center gap-1 ">
+                        Disable cloak option for the tracking domain <i class="ki-duotone ki-question-2"></i> </label>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+
+                      <label class="switch">
+                        <input name="check" type="checkbox" value="1" />
+                    </div>
+                  </div>
+                </div>
+                <div class="grid lg:grid-cols-3 gap-5 py-3">
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                      <label class="form-label flex items-center gap-1 ">
+                        Random selection of primary domain for tracking<i class="ki-duotone ki-question-2"></i> </label>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+
+                      <label class="switch">
+                        <input name="check" type="checkbox" value="1" />
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="grid lg:grid-cols-3 gap-5 py-3">
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                      <label class="form-label flex items-center gap-1 ">
+                        Enable fallback DKIM <i class="ki-duotone ki-question-2"></i> </label>
+                    </div>
+                  </div>
+                  <div class="lg:col-span-1 gap-5">
+                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                      <label class="switch">
+                        <input name="check" type="checkbox" value="1" />
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                <div class="card-header">Fallback DKIM Settings</div>
+                <div class="card-body">
+                  <div class="grid lg:grid-cols-2 gap-5 py-3">
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 ">
+                          Fallback DKIM selector<i class="ki-duotone ki-question-2"></i> </label>
+                        <input class="input" type="url" id="url" name="url" value=""
+                          placeholder="5">
+                      </div>
+                    </div>
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 ">
+                          Key size in bits<i class="ki-duotone ki-question-2"></i></label>
+                        <input class="input" type="name" id="name" name="name" value=""
+                          placeholder="index.php">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid lg:grid-cols-4 gap-5 py-3">
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 max-w-56">
+                        key size in bits <i class="ki-duotone ki-question-2"></i> </label>
+                        
+                      </div>
+                    </div>
+                    <div class="flex gap-12">
+                      <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                       <input class="radio" name="radio2" type="radio" value="1"/>
+                      512
+                      </label>
+                      <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                       <input checked="" class="radio" name="radio2" type="radio" value="1"/>
+                      1024
+                      </label>
+                      <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                        <input checked="" class="radio" name="radio2" type="radio" value="1"/>
+                        2048
+                       </label>
+                       <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                        <input checked="" class="radio" name="radio2" type="radio" value="1"/>
+                       4096
+                       </label>
+                     </div>
+                  </div>
+                  <div class="card bg-gray-200">
+                    <div class="card-body">
+                       
+                      <div class="w-full">
+                        <div class="flex items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                         <label class="form-label max-w-32">
+                          Public Key
+                         </label>
+                         <textarea class="textarea" name="memo" placeholder="-----BEGIN PUBLIC KEY-----" rows="6"></textarea>
+                        </div>
+                       </div> 
+                    <div class="w-full">
+                      <div class="flex items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                       <label class="form-label max-w-32">
+                        Private Key
+                       </label>
+                       <textarea class="textarea" name="memo" placeholder="-----BEGIN PRIVATE KEY-----" rows="6"></textarea>
+                      </div>
+                     </div>
+                  <div class="text-xl py-3 text-gray-900">
+                    Add the following 'TXT' record
+                  </div>
+                  <P class="text-primary-active">Login to the DNS zone of your domain <span class="text-xl py-3 text-gray-900" >mumara.net</span> and add the following entry.</P>
+                  <div class="border-b border-b-gray-200"></div>
+                   <div class="border-b border-b-gray-200"></div>
+                  <br>
+                  <div class="w-full">
+                    <div class="flex items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                     <label class="form-label max-w-32">
+                    <checkbox>domainkey.mumara<br>.net</checkbox>
+                  
+                     </label>
+                     <textarea class="textarea" name="memo" placeholder="-----TXT-----" rows="6"></textarea>
+                    </div>
+                   </div>
+                   <div class="pt-1 pb-1">
+                    <button class="btn btn-sm btn-dark btn-icon-md flex justify-center btn-xs" type="submit">Verify</button>
+                  </div>
+                   </div>
+                   </div>
+                  
+                </div>
+              </div>
+              </div>
                   <!-- end Third tab -->
                 </div>
                 <div class="card-footer py-0">
