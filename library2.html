@@ -2917,12 +2917,926 @@ console.log(greet("World"));
               </div>
               </div>
                   <!-- end Third tab -->
+
+                    <!-- start Fourth tab -->
+                    <div class="hidden" id="tab_2_4">
+                      <div class="text-xl py-3">
+                        Contacts Setting
+                      </div>
+                      <div class="border-b border-b-gray-200"></div>
+                      <div class="grid lg:grid-cols-2 gap-5 py-3">
+                        <div class="lg:col-span-1 gap-5">
+                          <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                            <label class="form-label flex items-center gap-1 max-w-56">
+                              Mail Driver<i class="ki-duotone ki-question-2"></i> </label>
+                              <input class="input" type="name" id="name" name="name" value=""
+                          placeholder="">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="grid lg:grid-cols-3 gap-7 py-3">
+                        <div class="lg:col-span-1 gap-5">
+                          <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                            <label class="form-label flex items-center gap-1 ">
+                              Contacts import default mode<i class="ki-duotone ki-question-2"></i> </label>
+                            
+                          </div>
+                        </div>
+                        <div class="lg:col-span-1 gap-5 flex gap-12">
+                            <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                             <input class="radio" name="radio2" type="radio" value="1"/>
+                           Regular
+                            </label>
+                            <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                             <input checked="" class="radio" name="radio2" type="radio" value="1"/>
+                            Rocket
+                            </label>
+                            <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                              <input checked="" class="radio" name="radio2" type="radio" value="1"/>
+                             Both
+                             </label>
+                            
+                        </div>
+                      </div>
+                      <div class="grid lg:grid-cols-3 gap-7 py-3">
+                        <div class="lg:col-span-1 gap-5">
+                          <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                            <label class="form-label flex items-center gap-1 ">
+                              Update contacts counter upon deletion<i class="ki-duotone ki-question-2"></i> </label>
+                            
+                          </div>
+                        </div>
+                        <div class="lg:col-span-1 gap-5 flex gap-12">
+                            <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                             <input class="radio" name="radio2" type="radio" value="1"/>
+                           Real-time
+                            </label>
+                            <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                             <input checked="" class="radio" name="radio2" type="radio" value="1"/>
+                            Monthly
+                            </label>
+                            <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                              <input checked="" class="radio" name="radio2" type="radio" value="1"/>
+                            Never
+                             </label>
+                        </div>
+                      </div>
+                  <div class="grid lg:grid-cols-3 gap-5 py-5">
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 ">
+                          Allow users to select files from the server for importing<i class="ki-duotone ki-question-2"></i> </label>
+                      </div>
+                    </div>
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+  
+                        <label class="switch">
+                          <input name="check" type="checkbox" value="1" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid lg:grid-cols-3 gap-5 py-5">
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 ">
+                          Disable users from importing contacts with confirmed status<i class="ki-duotone ki-question-2"></i> </label>
+                      </div>
+                    </div>
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+  
+                        <label class="switch">
+                          <input name="check" type="checkbox" value="1" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid lg:grid-cols-3 gap-5 py-5">
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 ">
+                          Disable sending emails to unconfirmed contacts<i class="ki-duotone ki-question-2"></i> </label>
+                      </div>
+                    </div>
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+  
+                        <label class="switch">
+                          <input name="check" type="checkbox" value="1" />
+                      </div>
+                    </div>
+                  </div>
+                 
+                  
+                  
+                  <div class="grid lg:grid-cols-3 gap-5 py-3">
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 ">
+                          Force double opt-in for web forms<i class="ki-duotone ki-question-2"></i> </label>
+                      </div>
+                    </div>
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+  
+                        <label class="switch">
+                          <input name="check" type="checkbox" value="1" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid lg:grid-cols-3 gap-5 py-3">
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 ">
+                          Disable email address modification for the contacts<i class="ki-duotone ki-question-2"></i> </label>
+                      </div>
+                    </div>
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+  
+                        <label class="switch">
+                          <input name="check" type="checkbox" value="1" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid lg:grid-cols-3 gap-5 py-3">
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 ">
+                          MD5 hashed email support for suppression<i class="ki-duotone ki-question-2"></i> </label>
+                      </div>
+                    </div>
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+  
+                        <label class="switch">
+                          <input name="check" type="checkbox" value="1" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid lg:grid-cols-3 gap-5 py-3">
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 ">
+                          Limit domain suppression count for users<i class="ki-duotone ki-question-2"></i> </label>
+                      </div>
+                    </div>
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+  
+                        <label class="switch">
+                          <input name="check" type="checkbox" value="1" />
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                     <!-- end Fourth tab -->
+                      <!-- start fifth tab -->
+                    <div class="hidden" id="tab_2_5">
+                      <div class="text-xl py-3">
+                        Campaign Settings
+                      </div>
+                      <div class="border-b border-b-gray-200"></div>
+                  <div class="grid lg:grid-cols-3 gap-5 py-5">
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 ">
+                          Automatically resume auto-paused campaigns <i class="ki-duotone ki-question-2"></i> </label>
+                      </div>
+                    </div>
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+  
+                        <label class="switch">
+                          <input name="check" type="checkbox" value="1" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid lg:grid-cols-3 gap-5 py-5">
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 ">
+                          Enable unsubscribe confirmation prompt<i class="ki-duotone ki-question-2"></i> </label>
+                      </div>
+                    </div>
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+  
+                        <label class="switch">
+                          <input name="check" type="checkbox" value="1" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid lg:grid-cols-3 gap-5 py-5">
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 ">
+                          Disable sender information selection from sending node when sending a broadcast preview<i class="ki-duotone ki-question-2"></i> </label>
+                      </div>
+                    </div>
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+  
+                        <label class="switch">
+                          <input name="check" type="checkbox" value="1" />
+                      </div>
+                    </div>
+                  </div>
+                 
+                  
+                  
+                  <div class="grid lg:grid-cols-3 gap-5 py-3">
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 ">
+                          Turn on "Insert unsubscribe link" option by default when scheduling campaigns<i class="ki-duotone ki-question-2"></i> </label>
+                      </div>
+                    </div>
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+  
+                        <label class="switch">
+                          <input name="check" type="checkbox" value="1" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid lg:grid-cols-3 gap-7 py-3">
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 ">
+                          Custom unsubscribe content <i class="ki-duotone ki-question-2"></i> </label>
+                        
+                      </div>
+                    </div>
+                    <div class="lg:col-span-1 gap-5 flex gap-12">
+                        <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                         <input class="radio" name="radio2" type="radio" value="1"/>
+                       Left
+                        </label>
+                        <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                         <input checked="" class="radio" name="radio2" type="radio" value="1"/>
+                        Right
+                        </label>
+                        <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                          <input checked="" class="radio" name="radio2" type="radio" value="1"/>
+                         Center
+                         </label>
+                    </div>
+                  </div>
+                  <div class="grid lg:grid-cols-3 gap-5 py-3">
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 ">
+                          Unsubscribe Text  <i class="ki-duotone ki-question-2"></i> </label>
+                      </div>
+                    </div>
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+  
+                        <label class="switch">
+                          <input name="check" type="checkbox" value="1" />
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+                  <div class="grid lg:grid-cols-3 gap-7 py-3">
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 ">
+                          Default sender information selection <i class="ki-duotone ki-question-2"></i> </label>
+                        
+                      </div>
+                    </div>
+                    <div class="lg:col-span-1 gap-5 flex gap-12">
+                        <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                         <input class="radio" name="radio2" type="radio" value="1"/>
+                       Contact List
+                        </label>
+                        <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                         <input checked="" class="radio" name="radio2" type="radio" value="1"/>
+                        Sending Node
+                        </label>
+                        <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                          <input checked="" class="radio" name="radio2" type="radio" value="1"/>
+                         Custom
+                         </label>
+                    </div>
+                  </div>
+                  <div class="grid lg:grid-cols-3 gap-5 py-3">
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 ">
+                          Enable fallback DKIM <i class="ki-duotone ki-question-2"></i> </label>
+                      </div>
+                    </div>
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="switch">
+                          <input name="check" type="checkbox" value="1" />
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="grid lg:grid-cols-2 gap-5 py-3">
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 ">
+                          Recheck auto-disabled sending node connection interval<i class="ki-duotone ki-question-2"></i> </label>
+                        <input class="input" type="url" id="url" name="url" value=""
+                          placeholder="">
+                      </div>
+                    </div>
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 ">
+                          Recheck auto-disabled sending node connection duration <i class="ki-duotone ki-question-2"></i></label>
+                        <input class="input" type="name" id="name" name="name" value=""
+                          placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid lg:grid-cols-2 gap-5 py-3">
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 ">
+                          Ignore duplicate opens for <i class="ki-duotone ki-question-2"></i> </label>
+                        <input class="input" type="url" id="url" name="url" value=""
+                          placeholder="">
+                      </div>
+                    </div>
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 ">
+                          Default List-Unsubscribe email<i class="ki-duotone ki-question-2"></i></label>
+                        <input class="input" type="name" id="name" name="name" value=""
+                          placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid lg:grid-cols-2 gap-5 py-3">
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 ">
+                          SMTP driver<i class="ki-duotone ki-question-2"></i> </label>
+                          <select name="Mail Driver" id="Mail Driver" class="select select2">
+                            <option value="swift Mailer">swift Mailer</option>
+                            <option value="symfony Mailer">symfony Mailer</option></select>
+                          
+                      </div>
+                    </div>
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 ">
+                          Limit bounce email retrieval<i class="ki-duotone ki-question-2"></i></label>
+                        <input class="input" type="name" id="name" name="name" value=""
+                          placeholder="">
+                      </div>
+                    </div>
+                    </div>
+                   <div class="grid lg:grid-cols-3 gap-5 py-5">
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 ">
+                          Disable sender information selection from sending node when sending a broadcast preview<i class="ki-duotone ki-question-2"></i> </label>
+                      </div>
+                    </div>
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+  
+                        <label class="switch">
+                          <input name="check" type="checkbox" value="1" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid lg:grid-cols-3 gap-7 py-3">
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 ">
+                          Opened vs. unopened chart type on statistics pages<i class="ki-duotone ki-question-2"></i> </label>
+                        
+                      </div>
+                    </div>
+                    <div class="lg:col-span-1 gap-5 flex gap-12">
+                        <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                         <input class="radio" name="radio2" type="radio" value="1"/>
+                       Bar Chart
+                        </label>
+                        <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                         <input checked="" class="radio" name="radio2" type="radio" value="1"/>
+                        Pie Chart
+                        </label>
+                        
+                    </div>
+                  </div>
+                  <div class="grid lg:grid-cols-3 gap-7 py-3">
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 ">
+                          Restart stuck campaigns<i class="ki-duotone ki-question-2"></i> </label>
+                        
+                      </div>
+                    </div>
+                    <div class="lg:col-span-1 gap-5 flex gap-12">
+                        <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                         <input class="radio" name="radio2" type="radio" value="1"/>
+                       Yes
+                        </label>
+                        <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                         <input checked="" class="radio" name="radio2" type="radio" value="1"/>
+                        No
+                        </label>
+                        
+                    </div>
+                  </div>
+                   <div class="grid lg:grid-cols-2 gap-5 py-3">
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 ">
+                          Restart stuck campaigns after<i class="ki-duotone ki-question-2"></i> </label>
+                          <select name="Mail Driver" id="Mail Driver" class="select select2">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                            <option value="">5</option>
+                            <option value="">6</option>
+                            <option value="">7</option>
+                            <option value="">8</option>
+                            <option value="">9</option>
+                            <option value="r">10</option>
+                            <option value="">11</option>
+                            <option value="">12</option>
+                            <option value="">13</option>
+                            <option value="">14</option>
+                            <option value="">15</option>
+                            <option value="">16</option>
+                            <option value="">17</option>
+                            <option value="">18</option>
+                          </select>
+                          
+                      </div>
+                    </div>
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 ">
+                          Allowed Extensions <i class="ki-duotone ki-question-2"></i></label>
+                          <select name="Mail Driver" id="Mail Driver" class="select select2 select3">
+                            <option value="swift Mailer">Clicked/Sent</option>
+                            <option value="symfony Mailer">Clicked/Opened</option></select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="grid lg:grid-cols-3 gap-7 py-3">
+                    <div class="lg:col-span-1 gap-5">
+                      <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                        <label class="form-label flex items-center gap-1 ">
+                          Metric calculation reference for statistics <i class="ki-duotone ki-question-2"></i> </label>
+                        
+                      </div>
+                    </div>
+                    <div class="lg:col-span-1 gap-5 flex gap-12">
+                        <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                         <input class="radio" name="radio2" type="radio" value="1"/>
+                         Campaign audience
+                        </label>
+                        <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                         <input checked="" class="radio" name="radio2" type="radio" value="1"/>
+                         Emails sent
+                        </label>
+                        <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                          <input checked="" class="radio" name="radio2" type="radio" value="1"/>
+                          Emails delivered
+                         </label>
+                    </div>
+                  </div>
+                  
+                </div>
+                   <!-- end fifth tab -->
+                      <!-- start sixth tab -->
+                      <div class="hidden" id="tab_2_6">
+                        <div class="text-xl py-3">
+                          Trigger Settings
+                        </div>
+                        <div class="border-b border-b-gray-200"></div>
+                    
+                    
+                    <div class="grid lg:grid-cols-2 gap-5 py-3">
+                      <div class="lg:col-span-1 gap-5">
+                        <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                          <label class="form-label flex items-center gap-1 ">
+                            Cronjob execution limit <i class="ki-duotone ki-question-2"></i> </label>
+                          <input class="input" type="url" id="url" name="url" value=""
+                            placeholder="">
+                        </div>
+                      </div>
+                      <div class="lg:col-span-1 gap-5">
+                        <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                          <label class="form-label flex items-center gap-1 ">
+                            Records per execution<i class="ki-duotone ki-question-2"></i></label>
+                          <input class="input" type="name" id="name" name="name" value=""
+                            placeholder="">
+                        </div>
+                      </div>
+                    </div>
+                   
+                    
+                  
+                    
+                   
+                    
+                    
+                      
+                  </div>  
+                     <!-- end sixth tab -->
+                        <!-- start seventh tab -->
+                        <div class="hidden" id="tab_2_7">
+                          <div class="text-xl py-3">
+                            Log Settings
+                          </div>
+                          <div class="border-b border-b-gray-200"></div>
+                          <div class="grid lg:grid-cols-3 gap-5 pt-3 ">
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                <label class="form-label flex items-center gap-1 ">
+                                  Delete user notification logs<i class="ki-duotone ki-question-2"></i> </label>
+                              </div>
+                            </div>
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+          
+                                <label class="switch">
+                                  <input name="check" type="checkbox" value="1" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="grid lg:grid-cols-2 gap-5 py-3">
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                <label class="form-label flex items-center gap-1 max-w-56">
+                                  Reporting level <i class="ki-duotone ki-question-2"></i> </label>
+                                  <select name="time_zone" id="time_zone" class="select select2">
+                                    <option value="Pacific/Midway">Debug</option>
+                                    <option value="US/Samoa">Error</option>
+                                    <option value="Pacific/Info">Info</option>
+                                    <option value="US/Samoa">Critical</option>
+                                    <option value="Pacific/Midway">Notice</option>
+                                    <option value="US/Samoa">Warning</option>
+                                  </select>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="grid lg:grid-cols-3 gap-5 py-5">
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                <label class="form-label flex items-center gap-1 ">
+                                  Log ESP callbacks to files <i class="ki-duotone ki-question-2"></i> </label>
+                              </div>
+                            </div>
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+          
+                                <label class="switch">
+                                  <input name="check" type="checkbox" value="1" />
+                              </div>
+                            </div>
+                          </div>
+                    </div>  
+                       <!-- end seventh tab -->
+
+                        <!-- start eightth tab -->
+                        <div class="hidden" id="tab_2_8">
+                          <div class="text-xl py-3">
+                            Security Settings
+                          </div>
+                          <div class="border-b border-b-gray-200"></div>
+                          <div class="grid lg:grid-cols-3 gap-5 pt-5 ">
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                <label class="form-label flex items-center gap-1 ">
+                                  Automatically logout idle users <i class="ki-duotone ki-question-2"></i> </label>
+                              </div>
+                            </div>
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+          
+                                <label class="switch">
+                                  <input name="check" type="checkbox" value="1" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="grid lg:grid-cols-3 gap-5 py-5">
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                <label class="form-label flex items-center gap-1 ">
+                                  Display Remember Me option<i class="ki-duotone ki-question-2"></i> </label>
+                              </div>
+                            </div>
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+          
+                                <label class="switch">
+                                  <input name="check" type="checkbox" value="1" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="grid lg:grid-cols-3 gap-7 py-3">
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                <label class="form-label flex items-center gap-1 ">
+                                  Active sessions storage driver <i class="ki-duotone ki-question-2"></i> </label>
+                                
+                              </div>
+                            </div>
+                            <div class="lg:col-span-1 gap-5 flex gap-12">
+                                <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                                 <input class="radio" name="radio2" type="radio" value="1"/>
+                                 File-based
+                                </label>
+                                <label class="form-label flex items-center gap-2.5 text-nowrap ">
+                                 <input checked="" class="radio" name="radio2" type="radio" value="1"/>
+                                 Database
+                                </label>
+                                
+                            </div>
+                          </div>
+                          <div class="flex items-center grow rounded-xl border border-dashed gap-4 p-4 border-warning bg-warning-light">
+                            <i class="ki-outline ki-question-2 text-3xl text-warning"></i>
+                            <div class="flex flex-col gap-0.5">
+                              <p class="text text-2sm font-normal"> To initialize the tabs with JavaScript, use attribute instead. This prevents automatic initialization on page load. </p>
+                            </div>
+                          </div>
+                          <div class="grid lg:grid-cols-2 gap-5 py-3">
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                <label class="form-label flex items-center gap-1 max-w-56">
+                                  Delete exported files after <i class="ki-duotone ki-question-2"></i> </label>
+                                  <input class="input" type="name" id="name" name="name" value=""
+                              placeholder="">
+                              </div>
+                            </div>
+                          </div>
+
+                    </div>  
+                       <!-- end eightth tab -->
+                       <!-- start nineth tab -->
+                       <div class="hidden" id="tab_2_9">
+                        <div class="text-xl py-3">
+                          Integration Settings
+                        </div>
+                        <div class="border-b border-b-gray-200"></div>
+                        <div class="grid lg:grid-cols-3 gap-5 pt-5 ">
+                          <div class="lg:col-span-1 gap-5">
+                            <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                              <label class="form-label flex items-center gap-1 ">
+                                Google Analytics<i class="ki-duotone ki-question-2"></i> </label>
+                            </div>
+                          </div>
+                          <div class="lg:col-span-1 gap-5">
+                            <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+        
+                              <label class="switch">
+                                <input name="check" type="checkbox" value="1" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="grid lg:grid-cols-3 gap-5 py-5">
+                          <div class="lg:col-span-1 gap-5">
+                            <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                              <label class="form-label flex items-center gap-1 ">
+                                Google reCAPTCHA<i class="ki-duotone ki-question-2"></i> </label>
+                            </div>
+                          </div>
+                          <div class="lg:col-span-1 gap-5">
+                            <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+        
+                              <label class="switch">
+                                <input name="check" type="checkbox" value="1" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="grid lg:grid-cols-3 gap-5 py-1">
+                          <div class="lg:col-span-1 gap-5">
+                            <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                              <label class="form-label flex items-center gap-1 ">
+                                Gmail OAuth email relay<i class="ki-duotone ki-question-2"></i> </label>
+                            </div>
+                          </div>
+                          <div class="lg:col-span-1 gap-5">
+                            <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+        
+                              <label class="switch">
+                                <input name="check" type="checkbox" value="1" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="grid lg:grid-cols-2 gap-5 py-3">
+                          <div class="lg:col-span-1 gap-5">
+                            <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                              <label class="form-label flex items-center gap-1 max-w-56">
+                                AI API Key <i class="ki-duotone ki-question-2"></i> </label>
+                                <input class="input" type="name" id="name" name="name" value=""
+                            placeholder="">
+                            </div>
+                          </div>
+                        </div>
+
+                  </div>
+                       <!-- end nineth tab -->
+                        <!-- start tenth tab -->
+                        <div class="hidden" id="tab_2_10">
+                          <div class="text-xl py-3">
+                            Notification Settings
+                          </div>
+                          <div class="border-b border-b-gray-200"></div>
+                          <div class="grid lg:grid-cols-1 gap-5 pt-5">
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                <label class="form-label flex items-center gap-1 ">
+                                  Enable or disable the notifications of trigger being auto-disabled.</label>
+                              </div>
+                            </div>
+                            
+                          </div>
+                          <div class="grid lg:grid-cols-3 gap-5 pt-5 ">
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                <label class="form-label flex items-center gap-1 ">
+                                  Contact list has been imported <i class="ki-duotone ki-question-2"></i> </label>
+                              </div>
+                            </div>
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+          
+                                <label class="switch">
+                                  <input name="check" type="checkbox" value="1" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="grid lg:grid-cols-3 gap-5 pt-5 ">
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                <label class="form-label flex items-center gap-1 ">
+                                  Contst List has been exported<i class="ki-duotone ki-question-2"></i> </label>
+                              </div>
+                            </div>
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+          
+                                <label class="switch">
+                                  <input name="check" type="checkbox" value="1" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="grid lg:grid-cols-3 gap-5 pt-5 ">
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                <label class="form-label flex items-center gap-1 ">
+                                  Segment has been exported <i class="ki-duotone ki-question-2"></i> </label>
+                              </div>
+                            </div>
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+          
+                                <label class="switch">
+                                  <input name="check" type="checkbox" value="1" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="grid lg:grid-cols-3 gap-5 pt-5 ">
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                <label class="form-label flex items-center gap-1 ">
+                                  Segment has been created<i class="ki-duotone ki-question-2"></i> </label>
+                              </div>
+                            </div>
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+          
+                                <label class="switch">
+                                  <input name="check" type="checkbox" value="1" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="grid lg:grid-cols-3 gap-5 pt-5 ">
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                <label class="form-label flex items-center gap-1 ">
+                                  Campaign has been scheduled <i class="ki-duotone ki-question-2"></i> </label>
+                              </div>
+                            </div>
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+          
+                                <label class="switch">
+                                  <input name="check" type="checkbox" value="1" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="grid lg:grid-cols-3 gap-5 pt-5 ">
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                <label class="form-label flex items-center gap-1 ">
+                                  Scheduled campaign has been started<i class="ki-duotone ki-question-2"></i> </label>
+                              </div>
+                            </div>
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+          
+                                <label class="switch">
+                                  <input name="check" type="checkbox" value="1" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="grid lg:grid-cols-3 gap-5 pt-5 ">
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                <label class="form-label flex items-center gap-1 ">
+                                  Campaign has been finished<i class="ki-duotone ki-question-2"></i> </label>
+                              </div>
+                            </div>
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+          
+                                <label class="switch">
+                                  <input name="check" type="checkbox" value="1" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="grid lg:grid-cols-3 gap-5 pt-5 ">
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                <label class="form-label flex items-center gap-1 ">
+                                  Campaign auto-paused due to the monthly limit reached<i class="ki-duotone ki-question-2"></i> </label>
+                              </div>
+                            </div>
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+          
+                                <label class="switch">
+                                  <input name="check" type="checkbox" value="1" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="grid lg:grid-cols-3 gap-5 pt-5 ">
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                <label class="form-label flex items-center gap-1 ">
+                                  Campaign auto-paused due to the daily limit reached<i class="ki-duotone ki-question-2"></i> </label>
+                              </div>
+                            </div>
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+          
+                                <label class="switch">
+                                  <input name="check" type="checkbox" value="1" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="grid lg:grid-cols-3 gap-5 py-5">
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                <label class="form-label flex items-center gap-1 ">
+                                  Trigger has been auto-disabled<i class="ki-duotone ki-question-2"></i> </label>
+                              </div>
+                            </div>
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+          
+                                <label class="switch">
+                                  <input name="check" type="checkbox" value="1" />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="grid lg:grid-cols-3 gap-5 ">
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                <label class="form-label flex items-center gap-1 ">
+                                  Campaign system-paused due to the sending node failure<i class="ki-duotone ki-question-2"></i> </label>
+                              </div>
+                            </div>
+                            <div class="lg:col-span-1 gap-5">
+                              <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                <label class="switch">
+                                  <input name="check" type="checkbox" value="1" />
+                              </div>
+                            </div>
+                          </div>
+                          
+                            
+                    </div>
+                        <!-- end tenth tab -->
                 </div>
                 <div class="card-footer py-0">
                   <div class="flex justify-start pt-2 pb-3">
                     <button class="btn btn-primary min-w-28 flex justify-center" type="submit">Save</button>
                   </div>
                 </div>
+                
+
+                  
               </div>
             </div>
 
