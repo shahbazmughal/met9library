@@ -13,14 +13,16 @@
     <link href="assets/vendors/apexcharts/apexcharts.css" rel="stylesheet" />
     <link href="assets/vendors/keenicons/styles.bundle.css" rel="stylesheet" />
     <link href="assets/css/styles.css" rel="stylesheet" />
-    
+
     <style>
-        #width{
-    width: 50%;
-}
-#max-width{
-    width: 100%;
-}
+        #width {
+            width: 50%;
+        }
+
+        #max-width {
+            width: 100%;
+        }
+
         label.error {
             color: red;
             font-size: 12px;
@@ -2168,36 +2170,47 @@
                                                 not
                                                 supported.</p><br>
 
-                                                <div class="container mx-auto mt-10">
-                                                    <!-- Rows Container -->
-                                                    <div id="container">
-                                                        <!-- Initial Row -->
-                                                        <div class="grid lg:grid-cols-3 gap-5 py-5 row">
-                                                            <div class="lg:col-span-1 gap-5">
-                                                                <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
-                                                                    <input class="input border border-gray-300 p-2 w-full" type="text" name="text" placeholder="">
-                                                                </div>
+                                            <div class="container mx-auto mt-10">
+                                                <!-- Rows Container -->
+                                                <div id="container">
+                                                    <!-- Initial Row -->
+                                                    <div class="grid lg:grid-cols-3 gap-5 py-5 row">
+                                                        <div class="lg:col-span-1 gap-5">
+                                                            <div
+                                                                class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                                                <input class="input border border-gray-300 p-2 w-full"
+                                                                    type="text" name="text" placeholder="">
                                                             </div>
-                                                            <div class="lg:col-span-1 gap-5">
-                                                                <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
-                                                                    <input class="input border border-gray-300 p-2 w-full" type="value" name="text" placeholder="">
-                                                                    <span id="error_message" style="color: red; display: none;">Please select a valid option.</span>
-                                                                </div>
+                                                        </div>
+                                                        <div class="lg:col-span-1 gap-5">
+                                                            <div
+                                                                class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                                                <input class="input border border-gray-300 p-2 w-full"
+                                                                    type="value" name="text" placeholder="">
+                                                                <span id="error_message"
+                                                                    style="color: red; display: none;">Please select a
+                                                                    valid option.</span>
                                                             </div>
-                                                            <div class="lg:col-span-1 gap-5">
-                                                                <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
-                                                                    <div class="min-w-[190px]">
-                                                                        <button class="btn btn-danger bg-red-500 text-white px-3 py-1 delete-btn" type="button">Delete</button>
-                                                                    </div>
+                                                        </div>
+                                                        <div class="lg:col-span-1 gap-5">
+                                                            <div
+                                                                class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                                                <div class="min-w-[190px]">
+                                                                    <button
+                                                                        class="btn btn-danger bg-red-500 text-white px-3 py-1 delete-btn"
+                                                                        type="button">Delete</button>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <!-- Add New Button -->
-                                                    <div class="btn btn-light btn-head btn-sm py-5">
-                                                        <button class="justify-center add-new bg-blue-500 text-white px-3 py-1" type="button">+ Add New</button>
-                                                    </div>
                                                 </div>
+                                                <!-- Add New Button -->
+                                                <div class="btn btn-light btn-head btn-sm py-5">
+                                                    <button
+                                                        class="justify-center add-new bg-blue-500 text-white px-3 py-1"
+                                                        type="button">+ Add New</button>
+                                                </div>
+                                            </div>
                                             <br>
 
 
@@ -2427,7 +2440,7 @@
     <!-- End of Main -->
     <!-- End of Page -->
     <!-- Scripts -->
-    <script src="./jquery-3.7.1.min.js"></script>
+    <script src="./jquary/jquery-3.7.1.min.js"></script>
     <script src="assets/js/core.bundle.js"></script>
     <script src="assets/vendors/apexcharts/apexcharts.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -2438,8 +2451,7 @@
     <script>
         $(document).ready(function () {
             $("#delivery_form").validate({
-                rules: {
-                    listname: "required",
+                rules: {listname: "required",
                     sender_name: "required",
                     email: "required",
                     time_zone: "required",
@@ -2462,7 +2474,7 @@
 
             });
             $('.add-new').on('click', function () {
-        const newRow = `
+                const newRow = `
             <div class="grid lg:grid-cols-3 gap-5 py-5 row">
                 <div class="lg:col-span-1 gap-5">
                     <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
@@ -2483,16 +2495,16 @@
                     </div>
                 </div>
             </div>`;
-        // Append the new row to the container and slide it down
-        $(newRow).hide().appendTo('#container').slideDown();
-    });
+                // Append the new row to the container and slide it down
+                $(newRow).hide().appendTo('#container').slideDown();
+            });
 
-    // Delete row
-    $(document).on('click', '.delete-btn', function () {
-        $(this).closest('.row').slideUp(function () {
-            $(this).remove();
-        });
-    });
+            // Delete row
+            $(document).on('click', '.delete-btn', function () {
+                $(this).closest('.row').slideUp(function () {
+                    $(this).remove();
+                });
+            });
         });
     </script>
     <!-- End of Scripts -->

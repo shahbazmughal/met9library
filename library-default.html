@@ -1873,107 +1873,126 @@
         </div>
         <!-- End of Container -->
         <!-- Container -->
-        <div class="container-fixed">
-          <div class="flex grow gap-5 lg:gap-7.5">
-            <div class="hidden lg:block w-[230px] shrink-0">
-              <div class="w-[230px]" data-sticky="true" data-sticky-animation="true"
-                data-sticky-class="fixed z-[4] left-auto top-[calc(var(--tw-header-height)+1.875rem)]"
-                data-sticky-name="scrollspy" data-sticky-offset="200">
-                <div
-                  class="flex flex-col grow relative before:absolute before:left-[11px] before:top-0 before:bottom-0 before:border-l before:border-gray-200"
-                  data-scrollspy="true" data-scrollspy-offset="80px|lg:110px" data-scrollspy-target="body">
-                  <div class="pl-6 pr-2.5 py-2.5 text-2sm font-semibold text-gray-900">
-                    Base Components
-                  </div>
-                  <div class="flex flex-col">
-                    <a class="flex items-center rounded-lg pl-2.5 pr-2.5 py-2.5 gap-3.5 border border-transparent text-2sm text-gray-800 hover:text-primary hover:font-medium scrollspy-active:bg-secondary-active scrollspy-active:text-primary scrollspy-active:font-medium dark:hover:bg-coal-300 dark:hover:border-gray-100 hover:rounded-lg dark:scrollspy-active:bg-coal-300 dark:scrollspy-active:border-gray-100"
-                      data-scrollspy-anchor="true" href="#basic_settings">
-                      <span
-                        class="flex w-1.5 relative before:absolute before:top-0 before:left-px before:size-1.5 before:rounded-full before:-translate-x-2/4 before:-translate-y-2/4 scrollspy-active:before:bg-primary">
-                      </span>
-                      Basic Settings
-                    </a>
 
-                  </div>
+        <div class="flex grow gap-5 lg:gap-7.5">
+          <div class="hidden lg:block w-[230px] shrink-0">
+            <div class="w-[230px]" data-sticky="true" data-sticky-animation="true"
+              data-sticky-class="fixed z-[4] left-auto top-[calc(var(--tw-header-height)+1.875rem)]"
+              data-sticky-name="scrollspy" data-sticky-offset="200">
+              <div
+                class="flex flex-col grow relative before:absolute before:left-[11px] before:top-0 before:bottom-0 before:border-l before:border-gray-200"
+                data-scrollspy="true" data-scrollspy-offset="80px|lg:110px" data-scrollspy-target="body">
+                <div class="pl-6 pr-2.5 py-2.5 text-2sm font-semibold text-gray-900">
+                  Base Components
+                </div>
+                <div class="flex flex-col">
+                  <a class="flex items-center rounded-lg pl-2.5 pr-2.5 py-2.5 gap-3.5 border border-transparent text-2sm text-gray-800 hover:text-primary hover:font-medium scrollspy-active:bg-secondary-active scrollspy-active:text-primary scrollspy-active:font-medium dark:hover:bg-coal-300 dark:hover:border-gray-100 hover:rounded-lg dark:scrollspy-active:bg-coal-300 dark:scrollspy-active:border-gray-100"
+                    data-scrollspy-anchor="true" href="#basic_settings">
+                    <span
+                      class="flex w-1.5 relative before:absolute before:top-0 before:left-px before:size-1.5 before:rounded-full before:-translate-x-2/4 before:-translate-y-2/4 scrollspy-active:before:bg-primary">
+                    </span>
+                    Basic Settings
+                  </a>
+
                 </div>
               </div>
             </div>
-            <div class="flex flex-col items-stretch grow gap-5 lg:gap-7.5">
-
-
-              <div class="container mx-auto mt-10">
-                <!-- Rows Container -->
-                <div id="container">
-                    <!-- Initial Row -->
-                    <div class="grid lg:grid-cols-3 gap-5 py-5 row">
-                        <div class="lg:col-span-1 gap-5">
-                            <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
-                                <input class="input border border-gray-300 p-2 w-full" type="text" name="text" placeholder="Enter text">
-                            </div>
-                        </div>
-                        <div class="lg:col-span-1 gap-5">
-                            <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
-                                <input class="input border border-gray-300 p-2 w-full" type="text" name="text" placeholder="Enter text">
-                                <span id="error_message" style="color: red; display: none;">Please select a valid option.</span>
-                            </div>
-                        </div>
-                        <div class="lg:col-span-1 gap-5">
-                            <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
-                                <div class="min-w-[190px]">
-                                    <button class="btn btn-danger bg-red-500 text-white px-3 py-1 delete-btn" type="button">Delete</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Add New Button -->
-                <div class="btn btn-light btn-head btn-sm py-5">
-                    <button class="justify-center add-new bg-blue-500 text-white px-3 py-1" type="button">+ Add New</button>
-                </div>
-            </div>
-            <script src="./jquery-3.7.1.min.js"></script>
+          </div>
+        </div>
+        <div class="flex flex-col space-y-2">
+          <!-- Radio Button 1 -->
+          <label class="flex items-center space-x-2">
+            <input
+              type="radio"
+              name="api-method"
+              value="method-1"
+              checked
+              class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500"
+            />
+            <span>Mumara API Method 1</span>
+          </label>
+        
+          <!-- Radio Button 2 -->
+          <label class="flex items-center space-x-2">
+            <input
+              type="radio"
+              name="api-method"
+              value="method-2"
+              class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500"
+            />
+            <span>Mumara API Method 2</span>
+          </label>
+        
+          <!-- Radio Button 3 -->
+          <label class="flex items-center space-x-2">
+            <input
+              type="radio"
+              name="api-method"
+              value="method-3"
+              class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500"
+            />
+            <span>Mumara API Method 3</span>
+          </label>
+        </div>
+        
+        <script src="./jquary/jquery-3.7.1.min.js"></script>
         <script src="assets/js/core.bundle.js"></script>
         <script src="assets/vendors/apexcharts/apexcharts.min.js"></script>
         <script src="assets/js/layouts/demo1.js"></script>
-        
-        <script src="./jquery.repeater.js"></script>
         <script>
           $(document).ready(function () {
-    // Add new row
-    $('.add-new').on('click', function () {
-        const newRow = `
-            <div class="grid lg:grid-cols-3 gap-5 py-5 row">
-                <div class="lg:col-span-1 gap-5">
-                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
-                        <input class="input border border-gray-300 p-2 w-full" type="text" name="text" placeholder="Enter text">
-                    </div>
-                </div>
-                <div class="lg:col-span-1 gap-5">
-                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
-                        <input class="input border border-gray-300 p-2 w-full" type="text" name="text" placeholder="Enter text">
-                        <span id="error_message" style="color: red; display: none;">Please select a valid option.</span>
-                    </div>
-                </div>
-                <div class="lg:col-span-1 gap-5">
-                    <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
-                        <div class="min-w-[190px]">
-                            <button class="btn btn-danger bg-red-500 text-white px-3 py-1 delete-btn" type="button">Delete</button>
-                        </div>
-                    </div>
-                </div>
-            </div>`;
-        // Append the new row to the container and slide it down
-        $(newRow).hide().appendTo('#container').slideDown();
-    });
+            // Submit event for the form
+            $('#validationform').submit(function (event) {
+              event.preventDefault(); // Prevent default form submission
 
-    // Delete row
-    $(document).on('click', '.delete-btn', function () {
-        $(this).closest('.row').slideUp(function () {
-            $(this).remove();
-        });
-    });
-});
-</script>
+              // Hide error messages
+              $('#error-message').hide();
+              $('#error-messag').hide();
+
+              // Get field values
+              var email = $('#email').val().trim();
+              var option = $('#option').val();
+
+              var isValid = true;
+
+              // Validate email field
+              if (email === '') {
+                $('#error-message').text('Please enter a valid email.').show();
+                isValid = false;
+              } else if (!validateEmail(email)) {
+                $('#error-message').text('Please enter a properly formatted email.').show();
+                isValid = false;
+              }
+
+              // Validate option field
+              if (option === null || option === "") {
+                $('#error-messag').text('Please select an option.').show();
+                isValid = false;
+              }
+
+              if (isValid) {
+                alert('Form submitted successfully!');
+              }
+            });
+
+            // Keydown event to hide errors dynamically
+            $('#email').keydown(function () {
+              $('#error-message').hide();
+            });
+
+            $('#option').on('change', function () {
+              $('#error-messag').hide();
+            });
+
+            // Function to validate email format
+            function validateEmail(email) {
+              var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Basic email regex
+              return emailRegex.test(email);
+            }
+          });
+        </script>
+
+
         <!-- End of Scripts -->
 </body>
 
