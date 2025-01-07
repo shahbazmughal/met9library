@@ -6537,10 +6537,10 @@
                 </div>
                 <div class="modal " data-modal="true" id="modal_1_1" data-modal-backdrop-static="true"
                     data-modal-disable-scroll="true">
-                    <div class="modal-content max-w-[25%]">
+                    <div class="modal-content max-w-[600px]">
                         <div class="modal-header">
                             <h3 class="modal-title">
-                                Add New Group
+                                Make Copies
                             </h3>
                             <button class="btn btn-xs btn-icon btn-light" type="button" data-modal-toggle="#modal_1_1"
                                 id="modal_close_1">
@@ -6550,17 +6550,30 @@
                         <div class="modal-body p-5">
                             <form action="#" id="modal_form" method="POST">
                                 <div class="flex gap-3 flex items-center justify-between py-2 mr-5 mb-1">
-                                    <label class="max-w-72 min-w-36">Group</label>
+                                    <label class="max-w-72 min-w-44 text-sm">Number of copies</label>
                                     <div class="w-full max-w-72 "><input type="text" class="input max-full"
                                             placeholder="" name="name"></div>
                                 </div>
-                                <div class="flex gap-3 flex items-center py-2 mr-5">
-                                    <label class="max-w-72 min-w-36"></label>
-                                    <div class="max-w-72">
+                                <div class="flex gap-3 flex items-center justify-between py-2 mr-5 mb-1">
+                                    <label class="max-w-72 min-w-44 text-sm">Also copy the contacts?</label>
+                                    <div class="w-full max-w-72 flex">
+                                        <label class="form-label align-center gap-2.5 text-nowrap ">
+                                            <input class="radio" name="alow" type="radio" value="1" checked="">
+                                            Yes
+                                          </label>
+                                          <label class="form-label  items-center gap-2.5 text-nowrap ">
+                                            <input class="radio" name="alow" type="radio" value="1" checked="">
+                                            No
+                                          </label>
+                                    </div>
+                                </div>
+                                <div class="flex gap-3 flex items-center justify-start py-2 mr-5 mb-1">
+                                    <label class="max-w-72 min-w-60 text-sm"></label>
+                                    <div class="">
                                         <button class="btn btn-primary" type="submit">
                                             Submit
                                         </button>
-                                        <button class="btn btn-light" type="reset">
+                                        <button class="btn btn-light " type="reset">
                                             Reset
                                         </button>
                                     </div>
@@ -6571,10 +6584,10 @@
                 </div>
                 <div class="modal " data-modal="true" id="modal_1_2" data-modal-backdrop-static="true"
                     data-modal-disable-scroll="true">
-                    <div class="modal-content max-w-[25%]">
+                    <div class="modal-content max-w-[600px]">
                         <div class="modal-header">
                             <h3 class="modal-title">
-                                Add New Group
+                               Split list
                             </h3>
                             <button class="btn btn-xs btn-icon btn-light" type="button" data-modal-toggle="#modal_1_2"
                                 id="modal_close_1">
@@ -6584,12 +6597,19 @@
                         <div class="modal-body p-5">
                             <form action="#" id="modal_form" method="POST">
                                 <div class="flex gap-3 flex items-center justify-between py-2 mr-5 mb-1">
-                                    <label class="max-w-72 min-w-36">Group</label>
-                                    <div class="w-full max-w-72 "><input type="text" class="input max-full"
+                                    <label class="max-w-72 min-w-44 text-sm">Split by</label>
+                                    <select name="time_zone" id="" class="select select2 valid " aria-invalid="false">
+                                        <option value="Pacific/Midway">Number of contacts per list</option>
+                                        <option value="US/Samoa">Number of contact lists</option>
+                                    </select>
+                                </div>
+                                <div class="flex gap-3 flex items-center justify-between py-2 mr-5 mb-1">
+                                    <label class="max-w-72 min-w-44">Number of contact lists</label>
+                                    <div class="w-full   "><input type="text" class="input max-full"
                                             placeholder="" name="name"></div>
                                 </div>
                                 <div class="flex gap-3 flex items-center py-2 mr-5">
-                                    <label class="max-w-72 min-w-36"></label>
+                                    <label class="max-w-72 min-w-44"></label>
                                     <div class="max-w-72">
                                         <button class="btn btn-primary" type="submit">
                                             Submit
@@ -6605,10 +6625,10 @@
                 </div>
                 <div class="modal " data-modal="true" id="modal_1_3" data-modal-backdrop-static="true"
                     data-modal-disable-scroll="true">
-                    <div class="modal-content max-w-[25%]">
+                    <div class="modal-content max-w-[600px]">
                         <div class="modal-header">
                             <h3 class="modal-title">
-                                Add New Group
+                               Split list
                             </h3>
                             <button class="btn btn-xs btn-icon btn-light" type="button" data-modal-toggle="#modal_1_3"
                                 id="modal_close_1">
@@ -6617,13 +6637,26 @@
                         </div>
                         <div class="modal-body p-5">
                             <form action="#" id="modal_form" method="POST">
+                                <div class="flex gap-3 flex items-center justify-start py-2 mr-5 mb-1">
+                                    <label class="max-w-72 min-w-44 text-sm">List Name</label>
+                                    <span >Work Warriors</span>                       
+                                </div>
                                 <div class="flex gap-3 flex items-center justify-between py-2 mr-5 mb-1">
-                                    <label class="max-w-72 min-w-36">Group</label>
-                                    <div class="w-full max-w-72 "><input type="text" class="input max-full"
-                                            placeholder="" name="name"></div>
+                                    <label class="max-w-72 min-w-44 text-sm">Merge with list</label>
+                                    <select name="time_zone" id="" class="select select2 valid " aria-invalid="false">
+                                        <option value="Pacific/Midway">contact list 1</option>
+                                        <option value="US/Samoa">contact list 2</option>
+                                    </select>
+                                </div>
+                                <div class="flex gap-3 flex items-center justify-between py-2 mr-5 mb-1">
+                                    <label class="max-w-72 min-w-44 text-sm">If duplicates found</label>
+                                    <select name="time_zone" id="" class="select select2 valid " aria-invalid="false">
+                                        <option value="Pacific/Midway">Skip duplicates</option>
+                                        <option value="US/Samoa">Overwrite duplicates</option>
+                                    </select>
                                 </div>
                                 <div class="flex gap-3 flex items-center py-2 mr-5">
-                                    <label class="max-w-72 min-w-36"></label>
+                                    <label class="max-w-72 min-w-44"></label>
                                     <div class="max-w-72">
                                         <button class="btn btn-primary" type="submit">
                                             Submit
@@ -6639,10 +6672,10 @@
                 </div>
                 <div class="modal " data-modal="true" id="modal_1_4" data-modal-backdrop-static="true"
                     data-modal-disable-scroll="true">
-                    <div class="modal-content max-w-[25%]">
+                    <div class="modal-content max-w-[600px]">
                         <div class="modal-header">
                             <h3 class="modal-title">
-                                Add New Group
+                               Split list
                             </h3>
                             <button class="btn btn-xs btn-icon btn-light" type="button" data-modal-toggle="#modal_1_4"
                                 id="modal_close_1">
@@ -6651,13 +6684,21 @@
                         </div>
                         <div class="modal-body p-5">
                             <form action="#" id="modal_form" method="POST">
+                                <div class="flex gap-3 flex items-center justify-start py-2 mr-5 mb-1">
+                                    <label class="max-w-72 min-w-44 text-sm">List Group</label>
+                                    <span >General</span>                       
+                                </div>
                                 <div class="flex gap-3 flex items-center justify-between py-2 mr-5 mb-1">
-                                    <label class="max-w-72 min-w-36">Group</label>
-                                    <div class="w-full max-w-72 "><input type="text" class="input max-full"
-                                            placeholder="" name="name"></div>
+                                    <label class="max-w-72 min-w-44 text-sm">Select new group</label>
+                                    <select name="time_zone" id="" class="select select2 valid " aria-invalid="false">
+                                        <option value="Pacific/Midway">General</option>
+                                        <option value="US/Samoa">Unsorted</option>
+                                        <option value="US/Samoa">Test1</option>
+                                        <option value="US/Samoa">Test2</option>
+                                    </select>
                                 </div>
                                 <div class="flex gap-3 flex items-center py-2 mr-5">
-                                    <label class="max-w-72 min-w-36"></label>
+                                    <label class="max-w-72 min-w-44"></label>
                                     <div class="max-w-72">
                                         <button class="btn btn-primary" type="submit">
                                             Submit
@@ -6673,10 +6714,10 @@
                 </div>
                 <div class="modal " data-modal="true" id="modal_1_5" data-modal-backdrop-static="true"
                     data-modal-disable-scroll="true">
-                    <div class="modal-content max-w-[25%]">
+                    <div class="modal-content max-w-[600px]">
                         <div class="modal-header">
                             <h3 class="modal-title">
-                                Add New Group
+                                Dedupe list
                             </h3>
                             <button class="btn btn-xs btn-icon btn-light" type="button" data-modal-toggle="#modal_1_5"
                                 id="modal_close_1">
@@ -6685,13 +6726,20 @@
                         </div>
                         <div class="modal-body p-5">
                             <form action="#" id="modal_form" method="POST">
-                                <div class="flex gap-3 flex items-center justify-between py-2 mr-5 mb-1">
-                                    <label class="max-w-72 min-w-36">Group</label>
-                                    <div class="w-full max-w-72 "><input type="text" class="input max-full"
-                                            placeholder="" name="name"></div>
+                                <div class="py-2 mr-5 mb-1">
+                                    The deduplication process helps identify and remove duplicate contacts across all contact lists. You can choose to either retain the duplicates in the current list while removing them from other lists, or keep the contacts in all lists and delete the duplicates from the current list.
                                 </div>
-                                <div class="flex gap-3 flex items-center py-2 mr-5">
-                                    <label class="max-w-72 min-w-36"></label>
+                                <div class="flex gap-3  py-2 mr-5 mb-1">
+                                    
+                                    <select name="time_zone" id="" class="select select2 valid " aria-invalid="false">
+                                        <option value="Pacific/Midway">General</option>
+                                        <option value="US/Samoa">Unsorted</option>
+                                        <option value="US/Samoa">Test1</option>
+                                        <option value="US/Samoa">Test2</option>
+                                    </select>
+                                </div>
+                                <div class="flex gap-3 flex items-center justify-end py-2 mr-5">
+                                    <label class="max-w-72 min-w-44"></label>
                                     <div class="max-w-72">
                                         <button class="btn btn-primary" type="submit">
                                             Submit
