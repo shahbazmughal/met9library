@@ -2054,152 +2054,194 @@
                             </div>
                         </div>
                     </div>
-                    </div>
-                    <br>
-                    <div class="container-fixed ">
-                        <div class="flex grow gap-5 lg:gap-7.5 ">
-                            <div id="width">
-                                <div class="card">
-                                    <form action="#" method="POST" id="delivery_form">
-                                        <div class="card-header">Contact List Details</div>
-                                        <div class="card-body">
-                                            <div class="grid lg:grid-cols-2 gap-5 py-5" data-name="QNkcmHMl">
-                                                <div class="lg:col-span-1 gap-5 " data-name="nrNnKoWQ">
-                                                    <div
-                                                        class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
-                                                        <label class="form-label flex items-center gap-1 ">
-                                                            List Name<i class="ki-outline ki-question-2 text-gray-700 font-semibold" data-tooltip=".list-name"></i>
-                                                            <span class="rounded-xl shadow-default p-3 bg-light border border-gray-200 text-gray-700 text-xs font-normal max-w-[370px] text-center result-response list-name hidden">Define a name to the contact list you are creating.</span>
-                                                        </label>
-                                                        <input class="input" type="text" id="listname" name="name"
-                                                            value="" placeholder="">
-                                                    </div>
+                </div>
+                <br>
+                <div class="container-fixed ">
+                    <div class="flex grow gap-5 lg:gap-7.5 ">
+                        <div id="width">
+                            <div class="card">
+                                <form action="#" method="POST" id="delivery_form">
+                                    <div class="card-header">Contact List Details</div>
+                                    <div class="card-body">
+                                        <div class="grid lg:grid-cols-2 gap-5 py-5" data-name="QNkcmHMl">
+                                            <div class="lg:col-span-1 gap-5 " data-name="nrNnKoWQ">
+                                                <div
+                                                    class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                                    <label class="form-label flex items-center gap-1 ">
+                                                        List Name<i
+                                                            class="ki-outline ki-question-2 text-gray-700 font-semibold"
+                                                            data-tooltip=".list-name"></i>
+                                                        <span
+                                                            class="rounded-xl shadow-default p-3 bg-light border border-gray-200 text-gray-700 text-xs font-normal max-w-[370px] text-center result-response list-name hidden">Define
+                                                            a name to the contact list you are creating.</span>
+                                                    </label>
+                                                    <input class="input" type="text" id="listname" name="name" value=""
+                                                        placeholder="">
                                                 </div>
-                                                <div class="lg:col-span-1 gap-5" data-name="mQVHIPDu">
-                                                    <div
-                                                        class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
-                                                        <label class="form-label flex items-center gap-1 max-w-56">
-                                                            Group<i class="ki-solid ki-plus-squared text-primary  cursor-pointer" id="alert-id" data-modal-toggle="#modal_1_1"></i> <i
-                                                                class="ki-outline ki-question-2 text-gray-700 font-semibold" data-tooltip=".group-name"></i>
-                                                                <span class="rounded-xl shadow-default p-3 bg-light border border-gray-200 text-gray-700 text-xs font-normal max-w-[370px] text-center result-response group-name hidden">Create or select a group to categorize and organize your list.</span>
-                                                        </label>
-                                                        <select name="group_id" id="group-id"
-                                                            class="select select2 select3">
-                                                            class="select select2 select3" name="selectclass"&gt;
-                                                            <option value="" disabled="" selected="">Select an option
-                                                            </option>
-                                                            <option value="Pacific/Midway">General</option>
-                                                            <option value="US/Samoa">Test</option>
-                                                            <option value="US/Hawaii">Unsorted</option>
-                                                        </select>
-                                                    </div>
+                                            </div>
+                                            <div class="lg:col-span-1 gap-5" data-name="mQVHIPDu">
+                                                <div
+                                                    class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                                    <label class="form-label flex items-center gap-1 max-w-56">
+                                                        Group<i
+                                                            class="ki-solid ki-plus-squared text-primary  cursor-pointer"
+                                                            id="alert-id" data-modal-toggle="#modal_1_1"></i> <i
+                                                            class="ki-outline ki-question-2 text-gray-700 font-semibold"
+                                                            data-tooltip=".group-name"></i>
+                                                        <span
+                                                            class="rounded-xl shadow-default p-3 bg-light border border-gray-200 text-gray-700 text-xs font-normal max-w-[370px] text-center result-response group-name hidden">Create
+                                                            or select a group to categorize and organize your
+                                                            list.</span>
+                                                    </label>
+                                                    <select name="group_id" id="group-id"
+                                                        class="select select2 select3">
+                                                        class="select select2 select3" name="selectclass"&gt;
+                                                        <option value="" disabled="" selected="">Select an option
+                                                        </option>
+                                                        <option value="Pacific/Midway">General</option>
+                                                        <option value="US/Samoa">Test</option>
+                                                        <option value="US/Hawaii">Unsorted</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="lg:col-span-1 gap-5">
+                                            <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                                <label class="form-label flex items-center gap-1 max-w-56">
+                                                    Profile Fields <i
+                                                        class="ki-outline ki-question-2 text-gray-700 font-semibold"
+                                                        data-tooltip=".profile-field"></i>
+                                                    <span
+                                                        class="rounded-xl shadow-default p-3 bg-light border border-gray-200 text-gray-700 text-xs font-normal max-w-[370px] text-center result-response profile-field hidden">Assign
+                                                        predefined profile fields or create custom fields to fit your
+                                                        needs. Field types such as text, dropdowns, and checkboxes allow
+                                                        you to structure and categorize contact information efficiently,
+                                                        helping you organize and manage your lists in a way that best
+                                                        supports your goals.</span>
+
+                                                </label>
+                                                <select id="option" class="select select2 select3">
+                                                    <option value="" disabled selected>Select an option</option>
+                                                    <option value="Pacific/Midway">Assign Profile Fields</option>
+                                                    <option value="US/Samoa">Test</option>
+                                                    <option value="US/Hawaii">First Name</option>
+                                                    <option value="US/Hawaii">Last Name</option>
+                                                    <option value="US/Hawaii">Birth Data</option>
+                                                    <option value="US/Hawaii">Phone</option>
+                                                    <option value="US/Hawaii">Company</option>
+
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="grid lg:grid-cols-2 gap-5 py-5">
+                                            <div class="lg:col-span-1 gap-5">
+                                                <div
+                                                    class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                                    <label class="form-label flex items-center gap-1">
+                                                        Sender Name<i
+                                                            class="ki-outline ki-question-2 text-gray-700 font-semibold"
+                                                            data-tooltip=".sender-name"></i>
+                                                        <span
+                                                            class="rounded-xl shadow-default p-3 bg-light border border-gray-200 text-gray-700 text-xs font-normal max-w-[370px] text-center result-response sender-name hidden">The
+                                                            person responsible for managing this list. This name can be
+                                                            used as the sender's name if the sender information is set
+                                                            to be pulled from the contact list when scheduling a
+                                                            broadcast.</span>
+                                                    </label>
+                                                    <input class="input" type="text" id="url" name="owner_name" value=""
+                                                        placeholder="">
                                                 </div>
                                             </div>
                                             <div class="lg:col-span-1 gap-5">
                                                 <div
                                                     class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
                                                     <label class="form-label flex items-center gap-1 max-w-56">
-                                                        Profile Fields <i
-                                                            class="ki-outline ki-question-2 text-gray-700 font-semibold" data-tooltip=".profile-field"></i>
-                                                            <span class="rounded-xl shadow-default p-3 bg-light border border-gray-200 text-gray-700 text-xs font-normal max-w-[370px] text-center result-response profile-field hidden">Assign predefined profile fields or create custom fields to fit your needs. Field types such as text, dropdowns, and checkboxes allow you to structure and categorize contact information efficiently, helping you organize and manage your lists in a way that best supports your goals.</span>
+                                                        Sender Email<i
+                                                            class="ki-outline ki-question-2 text-gray-700 font-semibold"
+                                                            data-tooltip=".sender-email"></i>
+                                                        <span
+                                                            class="rounded-xl shadow-default p-3 bg-light border border-gray-200 text-gray-700 text-xs font-normal max-w-[370px] text-center result-response sender-email hidden">The
+                                                            email address of the list owner, which will be used as the
+                                                            sender's email if the sender information is set to be pulled
+                                                            from the contact list. Ensure the email belongs to a
+                                                            confirmed sending domain before using it in
+                                                            broadcasts.</span>
+                                                    </label>
+                                                    <input class="input" type="email" name="owner_email_part1" value=""
+                                                        placeholder="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="grid lg:grid-cols-2 gap-5 py-5">
+                                            <div class="lg:col-span-1 gap-5">
+                                                <div
+                                                    class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                                    <label class="form-label flex items-center gap-1 ">
+                                                        Reply-to Email<i
+                                                            class="ki-outline ki-question-2 text-gray-700 font-semibold"
+                                                            data-tooltip=".replay-to-email"></i>
+                                                        <span
+                                                            class="rounded-xl shadow-default p-3 bg-light border border-gray-200 text-gray-700 text-xs font-normal max-w-[370px] text-center result-response replay-to-email hidden">Provide
+                                                            the email address where you wish to receive replies from
+                                                            recipients.</span>
 
                                                     </label>
-                                                    <select id="option"
-                                                        class="select select2 select3">
+                                                    <input class="input" type="text" name="reply_email" value=""
+                                                        placeholder="">
+                                                </div>
+                                            </div>
+                                            <div class="lg:col-span-1 gap-5">
+                                                <div
+                                                    class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                                    <label class="form-label flex items-center gap-1 max-w-56">
+                                                        Bounce Email<i
+                                                            class="ki-outline ki-question-2 text-gray-700 font-semibold"
+                                                            data-tooltip=".bounce-email"></i>
+                                                        <span
+                                                            class="rounded-xl shadow-default p-3 bg-light border border-gray-200 text-gray-700 text-xs font-normal max-w-[370px] text-center result-response bounce-email hidden">Select
+                                                            the email address to receive delivery failure
+                                                            notifications.</span>
+                                                    </label>
+                                                    <select id="time_zone" class="select select2 select3">
                                                         <option value="" disabled selected>Select an option</option>
-                                                        <option value="Pacific/Midway">Assign Profile Fields</option>
+                                                        <option value="Pacific/Midway">General</option>
                                                         <option value="US/Samoa">Test</option>
-                                                        <option value="US/Hawaii">First Name</option>
-                                                        <option value="US/Hawaii">Last Name</option>
-                                                        <option value="US/Hawaii">Birth Data</option>
-                                                        <option value="US/Hawaii">Phone</option>
-                                                        <option value="US/Hawaii">Company</option>
-
+                                                        <option value="US/Hawaii">Unsorted</option>
                                                     </select>
+                                                    <span id="error_message" style="color: red; display: none;">Please
+                                                        select a valid
+                                                        option.</span>
                                                 </div>
                                             </div>
-                                            <div class="grid lg:grid-cols-2 gap-5 py-5">
-                                                <div class="lg:col-span-1 gap-5">
-                                                    <div
-                                                        class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
-                                                        <label class="form-label flex items-center gap-1">
-                                                            Sender Name<i
-                                                                class="ki-outline ki-question-2 text-gray-700 font-semibold" data-tooltip=".sender-name"></i>
-                                                                <span class="rounded-xl shadow-default p-3 bg-light border border-gray-200 text-gray-700 text-xs font-normal max-w-[370px] text-center result-response sender-name hidden">The person responsible for managing this list. This name can be used as the sender's name if the sender information is set to be pulled from the contact list when scheduling a broadcast.</span>  
-                                                        </label>
-                                                        <input class="input" type="text" id="url" name="owner_name"
-                                                            value="" placeholder="">
-                                                    </div>
-                                                </div>
-                                                <div class="lg:col-span-1 gap-5">
-                                                    <div
-                                                        class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
-                                                        <label class="form-label flex items-center gap-1 max-w-56">
-                                                            Sender Email<i
-                                                                class="ki-outline ki-question-2 text-gray-700 font-semibold" data-tooltip=".sender-email"></i>
-                                                                <span class="rounded-xl shadow-default p-3 bg-light border border-gray-200 text-gray-700 text-xs font-normal max-w-[370px] text-center result-response sender-email hidden">The email address of the list owner, which will be used as the sender's email if the sender information is set to be pulled from the contact list. Ensure the email belongs to a confirmed sending domain before using it in broadcasts.</span>  
-                                                        </label>
-                                                        <input class="input" type="email" name="owner_email_part1"
-                                                            value="" placeholder="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="grid lg:grid-cols-2 gap-5 py-5">
-                                                <div class="lg:col-span-1 gap-5">
-                                                    <div
-                                                        class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
-                                                        <label class="form-label flex items-center gap-1 ">
-                                                            Reply-to Email<i
-                                                                class="ki-outline ki-question-2 text-gray-700 font-semibold" data-tooltip=".replay-to-email"></i>
-                                                                <span class="rounded-xl shadow-default p-3 bg-light border border-gray-200 text-gray-700 text-xs font-normal max-w-[370px] text-center result-response replay-to-email hidden">Provide the email address where you wish to receive replies from recipients.</span>  
-
-                                                        </label>
-                                                        <input class="input" type="email" id="mail" name="reply_email"
-                                                            value="" placeholder="">
-                                                    </div>
-                                                </div>
-                                                <div class="lg:col-span-1 gap-5">
-                                                    <div
-                                                        class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
-                                                        <label class="form-label flex items-center gap-1 max-w-56">
-                                                            Bounce Email<i
-                                                                class="ki-outline ki-question-2 text-gray-700 font-semibold" data-tooltip=".bounce-email"></i>
-                                                                <span class="rounded-xl shadow-default p-3 bg-light border border-gray-200 text-gray-700 text-xs font-normal max-w-[370px] text-center result-response bounce-email hidden">Select the email address to receive delivery failure notifications.</span>
-                                                        </label>
-                                                        <select id="time_zone"
-                                                            class="select select2 select3">
-                                                            <option value="" disabled selected>Select an option</option>
-                                                            <option value="Pacific/Midway">General</option>
-                                                            <option value="US/Samoa">Test</option>
-                                                            <option value="US/Hawaii">Unsorted</option>
-                                                        </select>
-                                                        <span id="error_message"
-                                                            style="color: red; display: none;">Please select a valid
-                                                            option.</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <h1 class="text-xl pt-3 pb-1">Additional Headers <small
-                                                    class="ki-outline ki-question-2 text-gray-700 font-semibold" data-tooltip=".additional-header"></small>
-                                                <span class="rounded-xl shadow-default p-3 bg-light border border-gray-200 text-gray-700 text-xs font-normal max-w-[370px] text-center result-response additional-header hidden">Add custom email headers which will be embedded to the email when this sending node is used. These can be set as per your requirement or other tracking purposes.</span>
-                                            </h1>
-                                            <p class="text-2sm mb-4">Configure additional headers for your emails to include
-                                                custom information in the message headers /source.
-                                                Note: Only hyphens (-) can be used. Spaces and special characters are
-                                                not
-                                                supported.</p>
-                                                <button class="btn btn-light"  id="new-button1" type="button">Add New</button>
-                                                <div id="button_form" class="hidden">
+                                        </div>
+                                        <h1 class="text-xl pt-3 pb-1">Additional Headers <small
+                                                class="ki-outline ki-question-2 text-gray-700 font-semibold"
+                                                data-tooltip=".additional-header"></small>
+                                            <span
+                                                class="rounded-xl shadow-default p-3 bg-light border border-gray-200 text-gray-700 text-xs font-normal max-w-[370px] text-center result-response additional-header hidden">Add
+                                                custom email headers which will be embedded to the email when this
+                                                sending node is used. These can be set as per your requirement or other
+                                                tracking purposes.</span>
+                                        </h1>
+                                        <p class="text-2sm mb-4">Configure additional headers for your emails to include
+                                            custom information in the message headers /source.
+                                            Note: Only hyphens (-) can be used. Spaces and special characters are
+                                            not
+                                            supported.</p>
+                                        <button class="btn btn-light" id="new-button1" type="button">Add New</button>
+                                        <div id="button_form" class="hidden">
                                             <div class="container mx-auto ">
                                                 <!-- Rows Container -->
-                                                 
+
                                                 <div id="container">
                                                     <!-- Initial Row -->
-                                                     
+
                                                     <div class="grid lg:grid-cols-3 gap-5  row">
                                                         <div class="lg:col-span-1 gap-5 mb-4">
-                                                            <div class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
-                                                                <input class="input border border-gray-300 p-2 w-full" type="text" name="text" placeholder="">
+                                                            <div
+                                                                class="flex flex-col items-baseline flex-wrap lg:flex-nowrap gap-2.5">
+                                                                <input class="input border border-gray-300 p-2 w-full"
+                                                                    type="text" name="text" placeholder="">
                                                             </div>
                                                         </div>
                                                         <div class="lg:col-span-1 gap-5 mb-4">
@@ -2232,220 +2274,193 @@
                                                         type="button">+ Add New</button>
                                                 </div>
                                             </div>
-                                            </div>
-                                            <br>
+                                        </div>
+                                        <br>
 
 
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="flex justify-start pt-2 pb-3">
+                                            <button class="btn btn-primary min-w-28 flex justify-center"
+                                                type="submit">Save</button>
+                                            <button class="btn btn-icon-xs btn-dark min-w-12 flex justify-center mx-4"
+                                                type="reset">Cancel</button>
                                         </div>
-                                        <div class="card-footer">
-                                            <div class="flex justify-start pt-2 pb-3">
-                                                <button class="btn btn-primary min-w-28 flex justify-center"
-                                                    type="submit">Save</button>
-                                                <button
-                                                    class="btn btn-icon-xs btn-dark min-w-12 flex justify-center mx-4"
-                                                    type="reset">Cancel</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
+                                    </div>
+                                </form>
                             </div>
-                            <form action="#" id="modal_form" method="POST">
-                            <div class="container modal" data-modal="true" id="modal_1_1" data-modal-backdrop-static="true" data-modal-disable-scroll="true">
-                                <div class="modal-content max-w-[25%] top-[10%]">
-                                 <div class="modal-header">
-                                  <h3 class="modal-title">
-                                    Add New Group
-                                  </h3>
-                                  <button class="btn btn-xs btn-icon btn-light" type="button" data-modal-toggle="#modal_1_1" id="modal_close_1">
-                                   <i class="ki-outline ki-cross" >
-                                   </i>
-                                  </button>
-                                 </div>
-                                 <div class="modal-body">Group
-                                  <input type="text" class="input" placeholder="" name="name">
-                                 </div>
-                                 <div class="modal-footer justify-end">
-                                  <div class="flex gap-3 flex justify-end mb-5 mr-5" >
-                                   <button class="btn btn-primary"  type="submit" >
-                                    Submit
-                                   </button>
-                                   <button class="btn btn-light" type="reset"  >
-                                    Reset
-                                   </button>
-                                  </div>
-                                 </div>
-                                </div>
-                               </div>
-                            </form>
-                            <div id="width">
-                                <div class="card fixed-height">
-                                    <div class="card-header">Prioritize Columns</div>
-                                    <div class="card-body">
+                        </div>
+                        
 
-                                        <div class="card-body ">
-                                            <h4 class="text-2sm pb-3 pt-0 ">Select the columns you want to display for
-                                                this contact list and rearrange the order to prioritize them.</h4>
-                                            <ul id="sortable" class="list-group  sortable">
-                                                <li class="py-2 ">
-                                                    <div
-                                                        class="bg-gray-200  responsive flex h-9 border border-solid border-gray-500 flex">
-                                                        <div class="bg-gray-400"><i
-                                                                class="cursor ki-outline ki-textalign-justifycenter border-solid border-gray-500  text-lg border-b-0 mr-2 py-1  pl-2 "></i>
-                                                        </div>
-                                                        <span class="py-2 px-4">
-                                                            <input id="checkbox" type="checkbox" checked
-                                                                class="w-5 h-5  border-gray-300 py-1" checked />
-                                                        </span>
-                                                        <span class="text-gray-800 text-sm jistify-between  pt-2  ">
-                                                            Contact (includes email, first name and last name)
-                                                        </span>
+                        <div id="width">
+                            <div class="card fixed-height">
+                                <div class="card-header">Prioritize Columns</div>
+                                <div class="card-body">
 
+                                    <div class="card-body ">
+                                        <h4 class="text-2sm pb-3 pt-0 ">Select the columns you want to display for
+                                            this contact list and rearrange the order to prioritize them.</h4>
+                                        <ul id="sortable" class="list-group  sortable">
+                                            <li class="py-3 ">
+                                                <div
+                                                    class="bg-gray-200  responsive flex h-9 border border-solid border-gray-500 flex">
+                                                    <div class="bg-gray-400"><i
+                                                            class="cursor ki-outline ki-textalign-justifycenter border-solid border-gray-500  text-lg border-b-0 mr-2 py-1  pl-2 "></i>
                                                     </div>
-                                                </li>
-                                                <li class="py-3">
-                                                    <div
-                                                        class="bg-gray-200  responsive flex h-9 border border-solid border-gray-500 flex">
-                                                        <div class="bg-gray-400"><i
-                                                                class="cursor ki-outline ki-textalign-justifycenter border-solid border-gray-500  text-lg border-b-0 mr-2 py-1  pl-2 "
-                                                                id="icon"></i></div>
-                                                        <span class="py-2 px-4">
-                                                            <input id="checkbox" type="checkbox"
-                                                                class="w-5 h-5  border-gray-300 py-1" checked />
-                                                        </span>
-                                                        <span class="text-gray-800 text-sm jistify-between  pt-2  ">
-                                                            Group
-                                                        </span>
-                                                    </div>
-                                                </li>
-                                                <li class="py-3">
-                                                    <div
-                                                        class="bg-gray-200  responsive flex h-9 border border-solid border-gray-500 flex">
-                                                        <div class="bg-gray-400"><i
-                                                                class="cursor ki-outline ki-textalign-justifycenter border-solid border-gray-500  text-lg border-b-0 mr-2 py-1  pl-2 "
-                                                                id="icon"></i></div>
-                                                        <span class="py-2 px-4">
-                                                            <input id="checkbox" type="checkbox"
-                                                                class="w-5 h-5  border-gray-300 py-1" checked />
-                                                        </span>
-                                                        <span class="text-gray-800  text-sm jistify-between  pt-2 ">
-                                                            List
-                                                        </span>
-                                                    </div>
-                                                </li>
-                                                <li class="py-3">
-                                                    <div
-                                                        class="bg-gray-200  responsive flex h-9 border border-solid border-gray-500 flex">
-                                                        <div class="bg-gray-400"><i
-                                                                class="cursor ki-outline ki-textalign-justifycenter border-solid border-gray-500  text-lg border-b-0 mr-2 py-1  pl-2 "
-                                                                id="icon"></i></div>
-                                                        <span class="py-2 px-4">
-                                                            <input id="checkbox" type="checkbox"
-                                                                class="w-5 h-5  border-gray-300 py-1" checked />
-                                                        </span>
-                                                        <span class="text-gray-800  text-sm jistify-between  pt-2 ">
-                                                            Created On
-                                                        </span>
-                                                    </div>
-                                                </li>
-                                                <li class="py-3">
-                                                    <div
-                                                        class="bg-gray-200  responsive flex h-9 border border-solid border-gray-500 flex">
-                                                        <div class="bg-gray-400"><i
-                                                                class="cursor ki-outline ki-textalign-justifycenter border-solid border-gray-500  text-lg border-b-0 mr-2 py-1  pl-2 "
-                                                                id="icon"></i></div>
-                                                        <span class="py-2 px-4">
-                                                            <input id="checkbox" type="checkbox"
-                                                                class="w-5 h-5  border-gray-300 py-1" checked />
-                                                        </span>
-                                                        <span class="text-gray-800  text-sm jistify-between  pt-2  ">
-                                                            Confirmed
-                                                        </span>
-                                                    </div>
-                                                </li>
-                                                <li class="py-3">
-                                                    <div
-                                                        class="bg-gray-200  responsive flex h-9 border border-solid border-gray-500 flex">
-                                                        <div class="bg-gray-400"><i
-                                                                class="cursor ki-outline ki-textalign-justifycenter border-solid border-gray-500  text-lg border-b-0 mr-2 py-1  pl-2 "
-                                                                id="icon"></i></div>
-                                                        <span class="py-2 px-4">
-                                                            <input id="checkbox" type="checkbox"
-                                                                class="w-5 h-5  border-gray-300 py-1" checked />
-                                                        </span>
-                                                        <span class="text-gray-800 text-sm jistify-between  pt-2 ">
-                                                            Bounced
-                                                        </span>
-                                                    </div>
-                                                </li>
-                                                <li class="py-3">
-                                                    <div
-                                                        class="bg-gray-200  responsive flex h-9 border border-solid border-gray-500 flex">
-                                                        <div class="bg-gray-400"><i
-                                                                class="cursor ki-outline ki-textalign-justifycenter border-solid border-gray-500  text-lg border-b-0 mr-2 py-1  pl-2 "
-                                                                id="icon"></i></div>
-                                                        <span class="py-2 px-4">
-                                                            <input id="checkbox" type="checkbox"
-                                                                class="w-5 h-5  border-gray-300 py-1" checked />
-                                                        </span>
-                                                        <span class="text-gray-800 text-sm jistify-between  pt-2 ">
-                                                            Unsubscribed
-                                                        </span>
-                                                        <div class></div>
-                                                    </div>
-                                                </li>
-                                                <li class="py-3">
-                                                    <div
-                                                        class="bg-gray-200  responsive flex h-9 border border-solid border-gray-500 flex">
-                                                        <div class="bg-gray-400"><i
-                                                                class="cursor ki-outline ki-textalign-justifycenter border-solid border-gray-500  text-lg border-b-0 mr-2 py-1  pl-2 "
-                                                                id="icon"></i></div>
-                                                        <span class="py-2 px-4">
-                                                            <input id="checkbox" type="checkbox"
-                                                                class="w-5 h-5  border-gray-300 py-1" />
-                                                        </span>
-                                                        <span class="text-gray-800 text-sm jistify-between  pt-2 ">
-                                                            Spam
-                                                        </span>
-                                                    </div>
-                                                </li>
-                                                <li class="py-3">
-                                                    <div
-                                                        class="bg-gray-200  responsive flex h-9 border border-solid border-gray-500 flex">
-                                                        <div class="bg-gray-400"><i
-                                                                class="cursor ki-outline ki-textalign-justifycenter border-solid border-gray-500  text-lg border-b-0 mr-2 py-1  pl-2 "
-                                                                id="icon"></i></div>
-                                                        <span class="py-2 px-4">
-                                                            <input id="checkbox" type="checkbox"
-                                                                class="w-5 h-5  border-gray-300 py-1" />
-                                                        </span>
-                                                        <span class="text-gray-800 text-sm jistify-between  pt-2  ">
-                                                            Suppressed
-                                                        </span>
-                                                    </div>
-                                                </li>
-                                                <li class="py-3">
-                                                    <div
-                                                        class="bg-gray-200  responsive flex h-9 border border-solid border-gray-500 flex">
-                                                        <div class="bg-gray-400"><i
-                                                                class="cursor ki-outline ki-textalign-justifycenter border-solid border-gray-500  text-lg border-b-0 mr-2 py-1  pl-2 "
-                                                                id="icon"></i></div>
-                                                        <span class="py-2 px-4 bg">
-                                                            <input id="checkbox" type="checkbox"
-                                                                class="w-5 h-5  border-gray-300 py-1" />
-                                                        </span>
-                                                        <span class="text-gray-800 text-sm jistify-between  pt-2  ">
-                                                            Active
-                                                        </span>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
+                                                    <span class="py-2 px-4">
+                                                        <input id="checkbox" type="checkbox" checked
+                                                            class="w-5 h-5  border-gray-300 py-1" checked />
+                                                    </span>
+                                                    <span class="text-gray-800 text-sm jistify-between  pt-2  ">
+                                                        Contact (includes email, first name and last name)
+                                                    </span>
+
+                                                </div>
+                                            </li>
+                                            <li class="py-3">
+                                                <div
+                                                    class="bg-gray-200  responsive flex h-9 border border-solid border-gray-500 flex">
+                                                    <div class="bg-gray-400"><i
+                                                            class="cursor ki-outline ki-textalign-justifycenter border-solid border-gray-500  text-lg border-b-0 mr-2 py-1  pl-2 "
+                                                            id="icon"></i></div>
+                                                    <span class="py-2 px-4">
+                                                        <input id="checkbox" type="checkbox"
+                                                            class="w-5 h-5  border-gray-300 py-1" checked />
+                                                    </span>
+                                                    <span class="text-gray-800 text-sm jistify-between  pt-2  ">
+                                                        Group
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="py-3">
+                                                <div
+                                                    class="bg-gray-200  responsive flex h-9 border border-solid border-gray-500 flex">
+                                                    <div class="bg-gray-400"><i
+                                                            class="cursor ki-outline ki-textalign-justifycenter border-solid border-gray-500  text-lg border-b-0 mr-2 py-1  pl-2 "
+                                                            id="icon"></i></div>
+                                                    <span class="py-2 px-4">
+                                                        <input id="checkbox" type="checkbox"
+                                                            class="w-5 h-5  border-gray-300 py-1" checked />
+                                                    </span>
+                                                    <span class="text-gray-800  text-sm jistify-between  pt-2 ">
+                                                        List
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="py-3">
+                                                <div
+                                                    class="bg-gray-200  responsive flex h-9 border border-solid border-gray-500 flex">
+                                                    <div class="bg-gray-400"><i
+                                                            class="cursor ki-outline ki-textalign-justifycenter border-solid border-gray-500  text-lg border-b-0 mr-2 py-1  pl-2 "
+                                                            id="icon"></i></div>
+                                                    <span class="py-2 px-4">
+                                                        <input id="checkbox" type="checkbox"
+                                                            class="w-5 h-5  border-gray-300 py-1" checked />
+                                                    </span>
+                                                    <span class="text-gray-800  text-sm jistify-between  pt-2 ">
+                                                        Created On
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="py-3">
+                                                <div
+                                                    class="bg-gray-200  responsive flex h-9 border border-solid border-gray-500 flex">
+                                                    <div class="bg-gray-400"><i
+                                                            class="cursor ki-outline ki-textalign-justifycenter border-solid border-gray-500  text-lg border-b-0 mr-2 py-1  pl-2 "
+                                                            id="icon"></i></div>
+                                                    <span class="py-2 px-4">
+                                                        <input id="checkbox" type="checkbox"
+                                                            class="w-5 h-5  border-gray-300 py-1" checked />
+                                                    </span>
+                                                    <span class="text-gray-800  text-sm jistify-between  pt-2  ">
+                                                        Confirmed
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="py-3">
+                                                <div
+                                                    class="bg-gray-200  responsive flex h-9 border border-solid border-gray-500 flex">
+                                                    <div class="bg-gray-400"><i
+                                                            class="cursor ki-outline ki-textalign-justifycenter border-solid border-gray-500  text-lg border-b-0 mr-2 py-1  pl-2 "
+                                                            id="icon"></i></div>
+                                                    <span class="py-2 px-4">
+                                                        <input id="checkbox" type="checkbox"
+                                                            class="w-5 h-5  border-gray-300 py-1" checked />
+                                                    </span>
+                                                    <span class="text-gray-800 text-sm jistify-between  pt-2 ">
+                                                        Bounced
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="py-3">
+                                                <div
+                                                    class="bg-gray-200  responsive flex h-9 border border-solid border-gray-500 flex">
+                                                    <div class="bg-gray-400"><i
+                                                            class="cursor ki-outline ki-textalign-justifycenter border-solid border-gray-500  text-lg border-b-0 mr-2 py-1  pl-2 "
+                                                            id="icon"></i></div>
+                                                    <span class="py-2 px-4">
+                                                        <input id="checkbox" type="checkbox"
+                                                            class="w-5 h-5  border-gray-300 py-1" checked />
+                                                    </span>
+                                                    <span class="text-gray-800 text-sm jistify-between  pt-2 ">
+                                                        Unsubscribed
+                                                    </span>
+                                                    <div class></div>
+                                                </div>
+                                            </li>
+                                            <li class="py-3">
+                                                <div
+                                                    class="bg-gray-200  responsive flex h-9 border border-solid border-gray-500 flex">
+                                                    <div class="bg-gray-400"><i
+                                                            class="cursor ki-outline ki-textalign-justifycenter border-solid border-gray-500  text-lg border-b-0 mr-2 py-1  pl-2 "
+                                                            id="icon"></i></div>
+                                                    <span class="py-2 px-4">
+                                                        <input id="checkbox" type="checkbox"
+                                                            class="w-5 h-5  border-gray-300 py-1" />
+                                                    </span>
+                                                    <span class="text-gray-800 text-sm jistify-between  pt-2 ">
+                                                        Spam
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="py-3">
+                                                <div
+                                                    class="bg-gray-200  responsive flex h-9 border border-solid border-gray-500 flex">
+                                                    <div class="bg-gray-400"><i
+                                                            class="cursor ki-outline ki-textalign-justifycenter border-solid border-gray-500  text-lg border-b-0 mr-2 py-1  pl-2 "
+                                                            id="icon"></i></div>
+                                                    <span class="py-2 px-4">
+                                                        <input id="checkbox" type="checkbox"
+                                                            class="w-5 h-5  border-gray-300 py-1" />
+                                                    </span>
+                                                    <span class="text-gray-800 text-sm jistify-between  pt-2  ">
+                                                        Suppressed
+                                                    </span>
+                                                </div>
+                                            </li>
+                                            <li class="py-3">
+                                                <div
+                                                    class="bg-gray-200  responsive flex h-9 border border-solid border-gray-500 flex">
+                                                    <div class="bg-gray-400"><i
+                                                            class="cursor ki-outline ki-textalign-justifycenter border-solid border-gray-500  text-lg border-b-0 mr-2 py-1  pl-2 "
+                                                            id="icon"></i></div>
+                                                    <span class="py-2 px-4 bg">
+                                                        <input id="checkbox" type="checkbox"
+                                                            class="w-5 h-5  border-gray-300 py-1" />
+                                                    </span>
+                                                    <span class="text-gray-800 text-sm jistify-between  pt-2  ">
+                                                        Active
+                                                    </span>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- End of Container -->
+                </div>
+                <!-- End of Container -->
 
             </main>
             <!-- End of Content -->
@@ -2487,6 +2502,40 @@
         </div>
         <!-- End of Wrapper -->
     </div>
+
+    <div class="modal " data-modal="true" id="modal_1_1"
+        data-modal-backdrop-static="true" data-modal-disable-scroll="true">
+        <div class="modal-content max-w-[25%]">
+            <div class="modal-header">
+                <h3 class="modal-title">
+                    Add New Group
+                </h3>
+                <button class="btn btn-xs btn-icon btn-light" type="button"
+                    data-modal-toggle="#modal_1_1" id="modal_close_1">
+                    <i class="ki-outline ki-cross"></i>
+                </button>
+            </div>
+            <div class="modal-body p-5">
+                <form action="#" id="modal_form" method="POST">
+                    <div class="flex gap-3 flex items-center justify-between py-2 mr-5 mb-1">
+                        <label class="max-w-72 min-w-36">Group</label>
+                        <div class="w-full max-w-72 "><input type="text" class="input max-full" placeholder="" name="name"></div>                        
+                    </div>
+                    <div class="flex gap-3 flex items-center py-2 mr-5">
+                        <label class="max-w-72 min-w-36"></label>
+                        <div class="max-w-72">
+                            <button class="btn btn-primary" type="submit">
+                                Submit
+                            </button>
+                            <button class="btn btn-light" type="reset">
+                                Reset
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
     <!-- End of Main -->
     <!-- End of Page -->
     <!-- Scripts -->
@@ -2517,27 +2566,27 @@
                 }
             });
             $("#modal_form").validate({
-                    rules: {
-                        name: "required",
-                    },
-                    messages: {
-                        name: "Please enter a group name",
-                    }, 
+                rules: {
+                    name: "required",
+                },
+                messages: {
+                    name: "Please enter a group name",
+                },
                 submitHandler: function () {
                     alert("Submitted succussfully!");
                     $("#modal_close_1").trigger('click');
                     $("#modal_form")[0].reset();
                     return false;
-                    
-                }   
-                }),
-                
 
-            $(function () {
-                $("#sortable").sortable();
-                $("#sortable").disableSelection();
+                }
+            }),
 
-            });
+
+                $(function () {
+                    $("#sortable").sortable();
+                    $("#sortable").disableSelection();
+
+                });
             $('.add-new').on('click', function () {
                 const newRow = `
             <div class="grid lg:grid-cols-3 gap-5 mb-4 row">
@@ -2574,7 +2623,7 @@
                 $('#button_form').slideDown();
                 $('#new-button1').hide();
             });
-            
+
         });
     </script>
     <!-- End of Scripts -->
