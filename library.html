@@ -5395,56 +5395,43 @@
      <div class="border-b border-b-gray-200">
      </div>
      <div class="flex flex-col gap-5 p-5">
-      <div class="text-2sm text-gray-900 font-semibold">
-       Let us know why you’re reporing this person
+      <div class="flex flex-col space-y-2">
+        <!-- Radio Button 1 -->
+        <label class="flex items-center space-x-2">
+          <input
+            type="radio"
+            name="api-method"
+            value="method-1"
+            checked
+            class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500"
+          />
+          <span>Mumara API Method 1</span>
+        </label>
+      
+        <!-- Radio Button 2 -->
+        <label class="flex items-center space-x-2">
+          <input
+            type="radio"
+            name="api-method"
+            value="method-2"
+            class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500"
+          />
+          <span>Mumara API Method 2</span>
+        </label>
+      
+        <!-- Radio Button 3 -->
+        <label class="flex items-center space-x-2">
+          <input
+            type="radio"
+            name="api-method"
+            value="method-3"
+            class="w-4 h-4 text-blue-600 border-gray-300 focus:ring-blue-500"
+          />
+          <span>Mumara API Method 3</span>
+        </label>
       </div>
-      <div class="flex flex-col gap-3.5">
-       <label class="form-label flex items-center gap-2.5">
-        <input checked="" class="radio radio-sm" name="report-option" type="radio" value="1">
-         <div class="flex flex-col gap-0.5">
-          <div class="text-sm font-semibold text-gray-900">
-           Impersonation
-          </div>
-          <div class="text-2sm font-medium text-gray-600">
-           It looks like this profile might be impersonating someone else
-          </div>
-         </div>
-        </input>
-       </label>
-       <label class="form-label flex items-center gap-2.5">
-        <input checked="" class="radio radio-sm" name="report-option" type="radio" value="2"/>
-        <div class="flex flex-col gap-0.5">
-         <div class="text-sm font-semibold text-gray-900">
-          Spammy
-         </div>
-         <div class="text-2sm font-medium text-gray-600">
-          This person profile, comments or posts contain misleading text
-         </div>
-        </div>
-       </label>
-       <label class="form-label flex items-center gap-2.5">
-        <input checked="" class="radio radio-sm" name="report-option" type="radio" value="3"/>
-        <div class="flex flex-col gap-0.5">
-         <div class="text-sm font-semibold text-gray-900">
-          Off bumble behavior
-         </div>
-         <div class="text-2sm font-medium text-gray-600">
-          This person has engaged in behavior that is abusive, bullying
-         </div>
-        </div>
-       </label>
-       <label class="form-label flex items-center gap-2.5">
-        <input checked="" class="radio radio-sm" name="report-option" type="radio" value="4"/>
-        <div class="flex flex-col gap-0.5">
-         <div class="text-sm font-semibold text-gray-900">
-          Something else
-         </div>
-         <div class="text-2sm font-medium text-gray-600">
-          None of the reasons listed above are suitable
-         </div>
-        </div>
-       </label>
-      </div>
+      
+      
      </div>
      <div class="border-b border-b-gray-200">
      </div>
@@ -5467,6 +5454,7 @@
    </div>
   </div>
   <!-- End of Page -->
+   
   <!-- Scripts -->
   <script src="assets/js/core.bundle.js"></script>
   <script src="assets/vendors/apexcharts/apexcharts.min.js"></script>
